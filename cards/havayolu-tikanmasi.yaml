@@ -1,0 +1,33 @@
+id: havayolu-tikanmasi
+title: Boğaza bir şey kaçması (hava yolu tıkanması)
+category: ilk-yardim
+priority: kritik
+summary: >
+  Öksürebiliyorsa öksürmeye devam etmesini söyle. Konuşamıyor ve nefes alamıyorsa 5 sırt vuruşu ve 5 karın basısını sırayla uygula.
+steps:
+  - Boğulup boğulmadığını sor; öksürebiliyor ve konuşabiliyorsa öksürmeye devam etmesini söyle.
+  - Öksüremiyor, konuşamıyor ya da nefes alamıyorsa yanına geç, öne eğ ve kürek kemiklerinin arasına avuç topuğunla 5 kez sertçe vur.
+  - Cisim çıkmazsa arkasına geç, yumruğunu göbeğin biraz üstüne koy, diğer elinle kavra ve içe-yukarı doğru 5 kez hızla bastır.
+  - Cisim çıkana ya da kişi bilincini kaybedene kadar 5 sırt vuruşu ve 5 karın basısını sırayla tekrarla.
+  - Hamile ya da çok kilolu kişide karın yerine göğüs kemiğinin alt kısmına bastır.
+  - Bir yaşından küçük bebekte karın basısı uygulanmaz; bebeği yüzüstü kolunun üzerine alıp sırtına 5 kez vur, sonra sırtüstü çevirip göğsünün ortasına iki parmakla 5 kez bastır.
+  - Bilincini kaybederse 112'yi ara ve kalp masajına başla.
+  - Karın basısı uygulanan herkes sonrasında doktora görünmeli.
+dont:
+  - Ağzına körlemesine parmak sokma.
+  - Öksürebilen kişinin sırtına vurma.
+keywords:
+  - boğazına yemek kaçtı
+  - boğuluyor
+  - nefes alamıyor bir şey yuttu
+  - heimlich manevrası
+  - çocuğun boğazına şeker kaçtı
+  - bebek bir şey yuttu morarıyor
+related: [temel-yasam-destegi]
+sources:
+  - name: European Resuscitation Council (ERC) Temel Yaşam Desteği Kılavuzu 2021
+  - name: Sağlık Bakanlığı İlk Yardım Yönetmeliği (2015)
+review:
+  status: taslak
+  reviewer: null
+  date: null

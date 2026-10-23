@@ -1,0 +1,33 @@
+id: bilinci-kapali-nefes-aliyor
+title: Bilinci kapalı ama nefes alıyorsa
+category: ilk-yardim
+priority: kritik
+summary: >
+  Tepki vermiyor ama normal nefes alıyorsa kişiyi yan yatır (derlenme pozisyonu) ve nefesini sürekli kontrol et.
+steps:
+  - En fazla 10 saniye bak, dinle, hisset ve normal nefes aldığından emin ol.
+  - Omurga yaralanması şüphesi yoksa kişiyi yan yatır; üstteki bacağını dizden bük, üstteki elinin sırtını yanağının altına koy.
+  - Başını hafif geriye ver ki ağzından sıvı akabilsin ve hava yolu açık kalsın.
+  - Üşümemesi için üstünü ört.
+  - 112'yi ara.
+  - Nefesini düzenli aralıklarla kontrol et; normal nefes durursa hemen kalp masajına başla.
+dont:
+  - Ağzından su ya da yiyecek verme.
+  - Kolonya, soğan koklatma ya da yüzüne su serpme, tokatlama.
+  - Kişiyi yalnız bırakma.
+keywords:
+  - bayıldı ama nefes alıyor
+  - kendinde değil
+  - baygın
+  - koma pozisyonu
+  - derlenme pozisyonu
+  - yan yatırma
+  - kolonya koklatalım mı
+related: [temel-yasam-destegi, bas-ve-omurga-yaralanmasi]
+sources:
+  - name: European Resuscitation Council (ERC) İlk Yardım Kılavuzu 2021
+  - name: Sağlık Bakanlığı İlk Yardım Yönetmeliği (2015)
+review:
+  status: taslak
+  reviewer: null
+  date: null

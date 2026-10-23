@@ -1,0 +1,30 @@
+id: deprem-cantasi
+title: Deprem ve acil durum çantası
+category: hazirlik
+priority: normal
+summary: >
+  Önceden hazırlanmış bir çanta, yardım ulaşana kadarki ilk günlerde hayat kurtarır. Kapıya yakın, kolay ulaşılır bir yerde tut.
+steps:
+  - Kişi başı günde yaklaşık 4 litre su ve en az 3 günlük bozulmayan yiyecek koy.
+  - İlk yardım çantası, düzenli kullanılan ilaçlar ve reçete fotokopileri ekle.
+  - Düdük, el feneri, yedek pil, şarjlı powerbank ve pilli radyo koy.
+  - Kimlik ve önemli belgelerin fotokopilerini su geçirmez bir poşette sakla; bir miktar nakit para ekle.
+  - Battaniye ya da termal örtü, mevsime uygun yedek giysi, sağlam ayakkabı ve iş eldiveni koy.
+  - Toz maskesi, ıslak mendil ve hijyen malzemeleri ekle.
+  - Bebek, yaşlı ya da evcil hayvan ihtiyaçlarını unutma.
+  - Su ve yiyecekleri yılda en az bir kez yenile.
+  - Aile içi buluşma noktası ve iletişim planı belirle; en yakın toplanma alanını önceden öğren.
+keywords:
+  - deprem çantası listesi
+  - afet çantasına ne konur
+  - acil durum çantası
+  - depreme hazırlık
+  - 72 saat çantası
+related: [su-aritma, deprem-sonrasi-ilk-adimlar]
+sources:
+  - name: AFAD afet ve acil durum çantası önerileri
+    url: https://www.afad.gov.tr
+review:
+  status: taslak
+  reviewer: null
+  date: null

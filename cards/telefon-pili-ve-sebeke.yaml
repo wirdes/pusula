@@ -1,0 +1,28 @@
+id: telefon-pili-ve-sebeke
+title: Telefon pilini koruma ve şebeke yokken iletişim
+category: iletisim
+priority: yuksek
+summary: >
+  Pil en değerli kaynağın; gereksiz her şeyi kapat. Şebeke zayıfken SMS'in ulaşma ihtimali aramadan ve internetten yüksektir.
+steps:
+  - Ekran parlaklığını en aza indir ve güç tasarrufu modunu aç.
+  - Kullanmadığın uygulamaları, Bluetooth'u, konum servisini ve mobil veriyi kapat.
+  - Şebeke yokken telefon sürekli sinyal arayıp pil harcar; bir süre uçak modunda tut ve aralıklarla açıp kontrol et.
+  - Yakınlarına kısa bir SMS gönder; kim olduğunu, durumunu ve konumunu yaz.
+  - Ekranda yalnızca acil çağrı yazıyorsa 112'yi başka bir operatörün şebekesi üzerinden arayabilirsin.
+  - Gereksiz arama yapma; hatlar acil durumlar için meşgul olabilir.
+keywords:
+  - şarj bitiyor
+  - şebeke yok
+  - 112 arayabilir miyim
+  - sadece acil çağrı yazıyor
+  - internet yok aileme nasıl haber veririm
+  - powerbank
+related: [yardim-isareti-verme]
+sources:
+  - name: AFAD afet farkındalık eğitimleri
+    url: https://www.afad.gov.tr
+review:
+  status: taslak
+  reviewer: null
+  date: null

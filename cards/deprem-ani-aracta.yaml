@@ -1,0 +1,29 @@
+id: deprem-ani-aracta
+title: Deprem anında araçtaysan
+category: deprem
+priority: yuksek
+summary: >
+  Yavaşla ve aracı köprü, tünel, bina ve direklerden uzak, açık bir yerde durdur. Sarsıntı bitene kadar emniyet kemerin takılı şekilde araçta kal.
+steps:
+  - Ani fren yapmadan yavaşla ve aracı yolun kenarında, açık bir alanda durdur.
+  - Köprü, üst geçit, tünel, bina, direk ve ağaçların yanında durma.
+  - El frenini çek, emniyet kemerini çıkarma ve sarsıntı bitene kadar araçta kal.
+  - Toplu taşımadaysan oturduğun yerde başını koru, ayaktaysan sağlam bir yere tutun.
+  - Sarsıntı bitince hasarlı yollara, köprülere ve kopmuş kablolara dikkat ederek yavaş ilerle.
+dont:
+  - Tünel ya da köprü üzerinde durma.
+  - Kopmuş kablolar aracın üzerine düştüyse araçtan inme; yardım bekle.
+keywords:
+  - araba kullanırken deprem
+  - arabadayım yol sallandı
+  - otobüsteyim deprem
+  - köprüdeyken deprem
+  - trafikte deprem
+related: [deprem-sonrasi-ilk-adimlar, elektrik-carpmasi]
+sources:
+  - name: AFAD afet farkındalık eğitimleri
+    url: https://www.afad.gov.tr
+review:
+  status: taslak
+  reviewer: null
+  date: null

@@ -1,0 +1,31 @@
+id: gaz-kacagi
+title: Gaz kaçağı
+category: tehlike
+priority: kritik
+summary: >
+  Gaz kokusu alırsan ateş yakma ve hiçbir elektrik düğmesine dokunma. Vanayı kapat, pencereleri aç ve binadan çık.
+steps:
+  - Kibrit ya da çakmak yakma, sigara içme.
+  - Işık düğmelerine, prizlere ve elektrikli cihazlara dokunma; açma da kapatma da.
+  - Ana gaz vanasını kapat.
+  - Kapı ve pencereleri aç.
+  - Binadan çık; telefonu bina dışında kullan.
+  - Dışarıdan doğalgaz acil hattını (187) ya da 112'yi ara.
+dont:
+  - Asansör kullanma.
+  - Kapı zili çalma.
+keywords:
+  - gaz kokusu var
+  - doğalgaz kokuyor
+  - tüp kaçırıyor
+  - çürük yumurta kokusu
+  - ışığı açayım mı
+related: [yangin, deprem-sonrasi-ilk-adimlar]
+sources:
+  - name: Doğalgaz dağıtım şirketlerinin acil durum bilgilendirmeleri (187 Doğalgaz Acil)
+  - name: AFAD afet farkındalık eğitimleri
+    url: https://www.afad.gov.tr
+review:
+  status: taslak
+  reviewer: null
+  date: null

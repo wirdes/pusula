@@ -1,0 +1,30 @@
+id: su-aritma
+title: İçme suyunu güvenli hale getirme
+category: hayatta-kalma
+priority: yuksek
+summary: >
+  Güvenliğinden emin olmadığın suyu içmeden önce en az 1 dakika kaynat ya da kokusuz çamaşır suyuyla dezenfekte et.
+steps:
+  - Bulanık suyu önce temiz bir bezden süz ya da bekletip tortusunu çöktür.
+  - Kaynatabiliyorsan suyu en az 1 dakika fokurdayarak kaynat ve kapalı bir kapta soğut.
+  - Kaynatamıyorsan 1 litre suya 2 damla kokusuz, katkısız çamaşır suyu (%5–6 sodyum hipoklorit) ekle, karıştır ve 30 dakika beklet.
+  - Su bulanıksa litre başına 4 damla kullan.
+  - Bekleme sonunda suda hafif klor kokusu yoksa aynı miktarı tekrar ekle ve 15 dakika daha beklet.
+  - Arıtılmış suyu temiz ve kapalı kaplarda sakla.
+dont:
+  - Parfümlü, renkli ya da deterjan katkılı çamaşır suyu kullanma.
+  - Yakıt ya da kimyasal bulaşmış olabilecek suyu içme; bu yöntemler kimyasalları temizlemez.
+keywords:
+  - musluk suyu içilir mi
+  - su nasıl temizlenir
+  - kaç damla çamaşır suyu
+  - dere suyu içilir mi
+  - suyu kaç dakika kaynatmalıyım
+related: [deprem-cantasi]
+sources:
+  - name: CDC acil durumda suyun dezenfeksiyonu rehberi
+  - name: Dünya Sağlık Örgütü (WHO) içme suyu kalitesi rehberi
+review:
+  status: taslak
+  reviewer: null
+  date: null

@@ -1,0 +1,30 @@
+id: enkazdaki-birine-yardim
+title: Enkaz altındaki birine yardım
+category: deprem
+priority: kritik
+summary: >
+  Kendini tehlikeye atma. Sesin geldiği yeri işaretle, kurtarma ekiplerine haber ver ve kişiyle konuşmaya devam et.
+steps:
+  - Önce kendi güvenliğini sağla; çökme riski olan yapıya girme.
+  - Sesin geldiği yeri belirgin şekilde işaretle ve içerideki kişiyi not et.
+  - 112'ye ya da yakındaki kurtarma ekiplerine haber ver.
+  - Kişiyle konuş; adını sor, yalnız olmadığını söyle, sakin kalmasını ve enerjisini korumasını iste.
+  - Yalnızca hafif ve güvenle kaldırılabilen parçaları, üstten başlayarak elle kaldır.
+  - Bir uzvu uzun süredir sıkışmışsa çıkarmayı kurtarma ve sağlık ekiplerine bırak.
+dont:
+  - Büyük beton parçalarını, kolon ve kirişleri çekmeye çalışma.
+  - Kontrolsüz kazı yapma ya da iş makinesiyle rastgele enkaz kaldırma.
+keywords:
+  - enkazdan ses geliyor
+  - enkazda biri var
+  - göçük altında komşumuz var
+  - yıkılan binada kardeşim var
+  - taşları kaldırabilir miyim
+related: [ezilme-yaralanmasi, enkaz-altinda-kalma]
+sources:
+  - name: AFAD afet farkındalık eğitimleri
+    url: https://www.afad.gov.tr
+review:
+  status: taslak
+  reviewer: null
+  date: null

@@ -1,0 +1,33 @@
+id: hipotermi
+title: Aşırı üşüme (hipotermi)
+category: ilk-yardim
+priority: yuksek
+summary: >
+  Titreme, uyuşukluk, konuşmada bozulma ve soğuk-soluk cilt vücut ısısının tehlikeli derecede düştüğünü gösterebilir. Kişiyi kuru tut ve yavaşça ısıt.
+steps:
+  - Kişiyi rüzgâr ve soğuktan korunaklı bir yere al.
+  - Islak giysilerini çıkar; kuru giysi ve battaniyeyle sar, başını ve boynunu da ört.
+  - Yerden gelen soğuğa karşı altına karton, battaniye ya da köpük koy.
+  - Bilinci açıksa ve yutabiliyorsa ılık, şekerli bir içecek ver.
+  - Ten tene temasla ya da gövdesine konan ılık su şişeleriyle yavaşça ısıt.
+  - Bilinci bulanıklaştıysa ya da titremesi kendiliğinden durduysa durum ağırdır; kişiyi yatay ve hareketsiz tut, 112'yi ara.
+dont:
+  - Alkol verme.
+  - Kol ve bacaklarını ovma.
+  - Sıcak suya sokma ya da doğrudan ateşe, sobaya yaklaştırma.
+keywords:
+  - çok üşüyoruz
+  - donuyor
+  - titremesi durdu
+  - dili dolanıyor elleri buz gibi
+  - hipotermi belirtileri
+  - ısınsın diye alkol
+related: [sok]
+sources:
+  - name: European Resuscitation Council (ERC) İlk Yardım Kılavuzu 2021
+  - name: Türk Kızılay ilk yardım eğitimleri
+    url: https://www.kizilay.org.tr
+review:
+  status: taslak
+  reviewer: null
+  date: null

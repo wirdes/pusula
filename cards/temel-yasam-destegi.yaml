@@ -1,0 +1,36 @@
+id: temel-yasam-destegi
+title: Kalp masajı (yetişkinde temel yaşam desteği)
+category: ilk-yardim
+priority: kritik
+summary: >
+  Tepki vermiyor ve normal nefes almıyorsa 112'yi ara ve hemen göğüs basısına başla. Göğsün ortasına, dakikada 100–120 hızla, 5–6 cm derinlikte bastır.
+steps:
+  - Ortamın senin için güvenli olduğundan emin ol.
+  - Omuzlarından hafifçe sarsarak yüksek sesle "İyi misiniz?" diye seslen.
+  - Tepki yoksa başını geriye, çenesini yukarı ver ve en fazla 10 saniye normal nefes alıp almadığına bak, dinle, hisset.
+  - Normal nefes almıyorsa ya da yalnızca hırıltılı, düzensiz soluyorsa 112'yi ara; yanında biri varsa aramasını ve varsa bir OED (otomatik defibrilatör) getirmesini iste.
+  - Avuç içini göğsün ortasına koy, diğer elini üstüne kenetle, kollarını düz tut.
+  - Dakikada 100–120 hızla, 5–6 cm derinlikte bastır; her basıdan sonra göğsün tamamen geri gelmesine izin ver.
+  - Eğitimliysen her 30 basıdan sonra 2 kurtarıcı nefes ver; değilsen kesintisiz yalnızca göğüs basısı yap.
+  - OED gelirse cihazı aç ve sesli talimatlarını izle.
+  - Kişi uyanana, normal nefes alana ya da ekipler gelene kadar durma; yorulursan başka biriyle yaklaşık 2 dakikada bir değiş.
+dont:
+  - Nabız aramak için zaman kaybetme.
+  - Basılar arasında uzun ara verme.
+keywords:
+  - nefes almıyor
+  - kalbi durdu
+  - kalp masajı
+  - CPR
+  - suni teneffüs
+  - bayıldı nefes yok
+  - uyandıramıyoruz
+  - dakikada kaç bası
+related: [bilinci-kapali-nefes-aliyor, havayolu-tikanmasi]
+sources:
+  - name: European Resuscitation Council (ERC) Temel Yaşam Desteği Kılavuzu 2021
+  - name: Sağlık Bakanlığı İlk Yardım Yönetmeliği (2015)
+review:
+  status: taslak
+  reviewer: null
+  date: null

@@ -1,0 +1,32 @@
+id: ezilme-yaralanmasi
+title: Uzun süre sıkışmış uzuv (ezilme sendromu)
+category: ilk-yardim
+priority: kritik
+summary: >
+  Bir uzvu uzun süre enkaz altında sıkışmış kişi, kurtarıldıktan sonra iyi görünse bile ciddi tehlikede olabilir. Mutlaka sağlık ekiplerine ulaştır.
+steps:
+  - Kişiyle konuş, sakin tut ve üşümesini önle.
+  - Sıkışma uzun süredir devam ediyorsa mümkünse kurtarma ve sağlık ekiplerini bekle; çıkarma işlemini onlar yapsın.
+  - Sağlık ekiplerine sıkışmanın ne kadar sürdüğünü ve hangi uzvun sıkıştığını söyle.
+  - Kurtarıldıktan sonra kişi iyi görünse bile hemen bir sağlık kuruluşuna götür; böbrek yetmezliği ve kalp ritim bozukluğu gelişebilir.
+  - İdrarı koyu renkli (çay ya da kola rengi) veya çok azsa, uzvu şişiyor, soğuyor ya da hissizleşiyorsa bunu sağlık ekibine mutlaka bildir.
+dont:
+  - Yapı çökme tehlikesi yoksa, uzun süre sıkışmış uzvu ekipler gelmeden zorla kurtarmaya çalışma.
+  - Kurtarılan kişiyi iyi görünüyor diye tıbbi kontrolsüz bırakma.
+seek_help: Uzun süre sıkışmış her kişi, belirti olmasa bile tıbbi değerlendirme gerektirir.
+keywords:
+  - kolu saatlerdir taşın altında
+  - bacağı sıkıştı
+  - ezilme sendromu
+  - crush sendromu
+  - enkazdan çıkardık iyi görünüyor
+  - idrarı kola renginde
+related: [enkazdaki-birine-yardim, sok]
+sources:
+  - name: Sağlık Bakanlığı afet sağlık hizmetleri bilgilendirmeleri
+  - name: Türk Kızılay ilk yardım eğitimleri
+    url: https://www.kizilay.org.tr
+review:
+  status: taslak
+  reviewer: null
+  date: null

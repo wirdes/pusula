@@ -1,0 +1,34 @@
+id: deprem-ani-bina-ici
+title: Deprem anında bina içindeysen
+category: deprem
+priority: kritik
+summary: >
+  Sarsıntı başlayınca dışarı koşma. Olduğun yerde ÇÖK, KAPAN, TUTUN ve sarsıntı bitene kadar bekle.
+steps:
+  - Hemen yere çök.
+  - Sağlam bir masa ya da sehpanın altına gir; yoksa bir iç duvarın dibinde başını ve enseni kollarınla koru.
+  - Sığındığın eşyaya tutun ve sarsıntı bitene kadar yerinde kal.
+  - Pencere, cam, ayna, kitaplık ve asılı eşyalardan uzak dur.
+  - Yataktaysan yüzüstü dön, başını ve enseni yastıkla koru ve sarsıntı bitene kadar kal.
+  - Tekerlekli sandalyedeysen tekerlekleri kilitle, öne eğil ve başını kollarınla koru.
+dont:
+  - Sarsıntı sırasında merdivene, kapıya ya da dışarı koşma.
+  - Asansör kullanma.
+  - Balkona çıkma, pencereden atlama.
+keywords:
+  - deprem oluyor
+  - ev sallanıyor
+  - bina sallanıyor
+  - sarsıntı başladı
+  - evdeyim deprem
+  - ofiste deprem
+  - okulda deprem
+  - çök kapan tutun
+related: [deprem-sonrasi-ilk-adimlar, enkaz-altinda-kalma]
+sources:
+  - name: AFAD afet farkındalık eğitimleri (Çök-Kapan-Tutun)
+    url: https://www.afad.gov.tr
+review:
+  status: taslak
+  reviewer: null
+  date: null

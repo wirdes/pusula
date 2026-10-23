@@ -1,0 +1,31 @@
+id: deprem-ani-disarida
+title: Deprem anında dışarıdaysan
+category: deprem
+priority: kritik
+summary: >
+  Binalardan, duvarlardan, direklerden ve ağaçlardan uzak, açık bir alana geç. Orada çök ve başını koru.
+steps:
+  - Binalardan, duvarlardan, elektrik direklerinden, ağaçlardan ve tabelalardan uzaklaş.
+  - Açık bir alanda yere çök, başını ve enseni kollarınla koru.
+  - Sarsıntı bitene kadar olduğun yerde bekle.
+  - Kalabalık bir yerdeysen itişip koşma; olduğun yerde çök ve başını koru.
+  - Deniz kenarındaysan ve sarsıntı güçlü ya da uzun sürdüyse uyarı beklemeden yüksek bir yere ya da iç kesimlere git.
+dont:
+  - Bina dibine, balkon altına ya da duvar kenarına sığınma.
+  - Köprü ve üst geçit altında durma.
+  - Kopmuş elektrik tellerine yaklaşma.
+keywords:
+  - sokaktayım deprem
+  - dışarıdayım yer sallanıyor
+  - parkta deprem
+  - açık alan
+  - sahilde deprem
+  - tsunami
+related: [deprem-sonrasi-ilk-adimlar]
+sources:
+  - name: AFAD afet farkındalık eğitimleri
+    url: https://www.afad.gov.tr
+review:
+  status: taslak
+  reviewer: null
+  date: null

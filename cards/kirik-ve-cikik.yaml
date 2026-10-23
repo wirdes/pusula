@@ -1,0 +1,32 @@
+id: kirik-ve-cikik
+title: Kırık ve çıkık şüphesi
+category: ilk-yardim
+priority: yuksek
+summary: >
+  Kırık ya da çıkık şüphesi olan bölgeyi hareket ettirme; bulunduğu şekilde sabitle ve tıbbi yardım al.
+steps:
+  - Yaralı bölgeyi oynatma; kişinin en rahat ettiği pozisyonda kalmasına izin ver.
+  - Açık yara varsa üzerini temiz bir bezle ört; kanıyorsa kemiğe bastırmadan çevresine baskı uygula.
+  - Karton, tahta ya da katlanmış gazete gibi sert bir malzemeyle, kırığın bir üst ve bir alt eklemini içine alacak şekilde atel yap ve bezle sar.
+  - Kol yaralanmasında kolu üçgen bir bez ya da eşarpla boyna as.
+  - Şişliği azaltmak için bölgeye beze sarılı soğuk uygula.
+  - Parmak uçlarının rengini, hissini ve sıcaklığını kontrol et; sargı çok sıkıysa gevşet.
+dont:
+  - Kemiği yerine oturtmaya çalışma.
+  - Çıkığı çekerek düzeltmeye çalışma.
+  - Buzu doğrudan cilde koyma.
+keywords:
+  - kolu kırıldı
+  - bacağı kırıldı
+  - atel nasıl yapılır
+  - omzu çıktı
+  - bileğini oynatamıyor
+  - çok şişti
+related: [ciddi-kanama, bas-ve-omurga-yaralanmasi]
+sources:
+  - name: Sağlık Bakanlığı İlk Yardım Yönetmeliği (2015)
+  - name: European Resuscitation Council (ERC) İlk Yardım Kılavuzu 2021
+review:
+  status: taslak
+  reviewer: null
+  date: null

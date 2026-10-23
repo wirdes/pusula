@@ -1,0 +1,33 @@
+id: panik-ve-psikolojik-ilk-yardim
+title: Panik ve psikolojik ilk yardım
+category: psikolojik
+priority: normal
+summary: >
+  Panikteki birine sakin bir sesle eşlik et, nefesini yavaşlatmasına yardım et ve temel ihtiyaçlarını karşıla. Yalnız bırakma.
+steps:
+  - Sakin ve yavaş konuş; kendini tanıt ve yanında olduğunu söyle.
+  - Birlikte nefes alın; 4 saniye burundan al, 4 saniye tut, 6 saniye ağızdan ver ve birkaç kez tekrarla.
+  - Dikkatini çevreye yönlendir; gördüğü beş şeyi ve duyduğu üç sesi söylemesini iste.
+  - Su, battaniye ve güvenli bir yer gibi temel ihtiyaçlarını karşıla.
+  - Dinle ama anlatmaya zorlama; boş teselliler yerine buradayım, birlikte bekleyeceğiz de.
+  - Çocuklara yaşlarına uygun, kısa ve dürüst açıklamalar yap; mümkünse ailesinin yanında tut ve günlük rutinleri sürdür.
+dont:
+  - Sakin ol diye emretme ya da korkusunu küçümseme.
+  - Kişiyi yalnız bırakma.
+seek_help: Göğüs ağrısı ya da nefes darlığı uzun sürüyorsa bunun panik değil kalp ya da akciğer sorunu olabileceğini düşün ve tıbbi yardım iste.
+keywords:
+  - panik atak
+  - çok korkuyorum
+  - sürekli ağlıyor titriyor
+  - çocuklar çok korkuyor
+  - konuşmuyor boş boş bakıyor
+  - nefes alamıyorum gibi hissediyorum
+related: [enkaz-altinda-kalma]
+sources:
+  - name: Dünya Sağlık Örgütü (WHO) Psikolojik İlk Yardım Saha Rehberi (2011)
+  - name: Türk Kızılay psikososyal destek çalışmaları
+    url: https://www.kizilay.org.tr
+review:
+  status: taslak
+  reviewer: null
+  date: null

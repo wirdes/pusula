@@ -1,0 +1,34 @@
+id: yangin
+title: Yangın
+category: tehlike
+priority: kritik
+summary: >
+  Yangın küçük ve kontrol edilebilir değilse söndürmeye çalışma. Alçakta kalarak hemen çık, arkandaki kapıları kapat ve 112'yi ara.
+steps:
+  - Çevrendekileri uyar ve 112'yi ara.
+  - Duman varsa yere eğil, ağzını ve burnunu ıslak bir bezle kapat, alçaktan ilerle.
+  - Kapıyı açmadan önce elinin tersiyle dokun; sıcaksa açma ve başka bir çıkış ara.
+  - Çıktığın odaların kapılarını kapat; bu yangını yavaşlatır.
+  - Tava ya da yağ yangınında ocağı kapat ve tavanın üzerini kapakla ya da nemli bir bezle ört.
+  - Elektrik kaynaklı yangında su kullanmadan önce elektriği kes.
+  - Giysin tutuşursa dur, yere yat ve yuvarlan.
+  - Çıkamıyorsan bir odada kapının altını ıslak bezle kapat ve pencereden yardım iste.
+dont:
+  - Yağ yangınına su dökme.
+  - Asansör kullanma.
+  - Eşya almak için geri dönme.
+keywords:
+  - yangın var
+  - her yer duman
+  - tava alev aldı
+  - kapının arkası sıcak
+  - çıkamıyorum duman
+related: [yanik, gaz-kacagi]
+sources:
+  - name: İtfaiye yangın güvenliği bilgilendirmeleri
+  - name: AFAD afet farkındalık eğitimleri
+    url: https://www.afad.gov.tr
+review:
+  status: taslak
+  reviewer: null
+  date: null

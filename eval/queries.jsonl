@@ -1,0 +1,136 @@
+{"id": "q001", "text": "Deprem sırasında evin içindeysem ne yapmam gerekiyor?", "expected": ["deprem-ani-bina-ici"], "type": "resmi"}
+{"id": "q002", "text": "ev sallanıyo şu an napıyım", "expected": ["deprem-ani-bina-ici"], "type": "gunluk"}
+{"id": "q003", "text": "deprem oluyor ofisteyim ne yapmaliyim", "expected": ["deprem-ani-bina-ici"], "type": "diakritiksiz"}
+{"id": "q004", "text": "SALLANIYOR", "expected": ["deprem-ani-bina-ici"], "type": "panik"}
+{"id": "q005", "text": "yatakta uyurken her şey titremeye başladı kalkayım mı", "expected": ["deprem-ani-bina-ici"], "type": "dolayli"}
+{"id": "q006", "text": "Sarsıntı başladığında sokaktaysam nereye gitmeliyim?", "expected": ["deprem-ani-disarida"], "type": "resmi"}
+{"id": "q007", "text": "dışardayım yer sallanıyo binaların dibine mi gireyim", "expected": ["deprem-ani-disarida"], "type": "gunluk"}
+{"id": "q008", "text": "deprem oldu disaridayim nereye kacayim", "expected": ["deprem-ani-disarida"], "type": "diakritiksiz"}
+{"id": "q009", "text": "sahilde yürürken çok güçlü bir sarsıntı oldu deniz tehlikeli mi", "expected": ["deprem-ani-disarida"], "type": "dolayli"}
+{"id": "q010", "text": "şu an parktayım deprem oluyor ne yapmam lazım", "expected": ["deprem-ani-disarida"], "type": "ses"}
+{"id": "q011", "text": "Araç kullanırken deprem olursa ne yapmalıyım?", "expected": ["deprem-ani-aracta"], "type": "resmi"}
+{"id": "q012", "text": "arabadayım yol sallandı durayım mı devam mı edeyim", "expected": ["deprem-ani-aracta"], "type": "gunluk"}
+{"id": "q013", "text": "araba sürerken deprm olursa naplmalı", "expected": ["deprem-ani-aracta"], "type": "yazim_hatasi"}
+{"id": "q014", "text": "köprünün üstündeyken her şey sallanmaya başladı", "expected": ["deprem-ani-aracta"], "type": "dolayli"}
+{"id": "q015", "text": "otobusteyim deprem oluyor", "expected": ["deprem-ani-aracta"], "type": "diakritiksiz"}
+{"id": "q016", "text": "Deprem bittikten sonra ilk olarak ne yapmalıyım?", "expected": ["deprem-sonrasi-ilk-adimlar"], "type": "resmi"}
+{"id": "q017", "text": "sallantı durdu şimdi ne yapıcaz", "expected": ["deprem-sonrasi-ilk-adimlar"], "type": "gunluk"}
+{"id": "q018", "text": "deprem bitti binadan cikmali miyim", "expected": ["deprem-sonrasi-ilk-adimlar"], "type": "diakritiksiz"}
+{"id": "q019", "text": "evimiz çatladı eşyalarımı almak için içeri girebilir miyim", "expected": ["deprem-sonrasi-ilk-adimlar"], "type": "dolayli"}
+{"id": "q020", "text": "artçı olur mu tekrar sallanırsa ne yapayım", "expected": ["deprem-sonrasi-ilk-adimlar", "deprem-ani-bina-ici"], "type": "dolayli"}
+{"id": "q021", "text": "Enkaz altında kaldım, ne yapmalıyım?", "expected": ["enkaz-altinda-kalma"], "type": "resmi"}
+{"id": "q022", "text": "enkaz altindayim nefes almakta zorlaniyorum", "expected": ["enkaz-altinda-kalma"], "type": "diakritiksiz"}
+{"id": "q023", "text": "sıkıştım çıkamıyorum", "expected": ["enkaz-altinda-kalma"], "type": "panik"}
+{"id": "q024", "text": "göçük altındayım sesimi nasıl duyururum", "expected": ["enkaz-altinda-kalma"], "type": "gunluk"}
+{"id": "q025", "text": "enkazın altnda kaldm ne yapcam", "expected": ["enkaz-altinda-kalma"], "type": "yazim_hatasi"}
+{"id": "q026", "text": "Enkaz altından ses geliyor, nasıl yardım edebilirim?", "expected": ["enkazdaki-birine-yardim"], "type": "resmi"}
+{"id": "q027", "text": "komşumuzun sesi geliyo enkazdan ne yapalım", "expected": ["enkazdaki-birine-yardim"], "type": "gunluk"}
+{"id": "q028", "text": "enkazda biri var sesi geliyor kazalim mi", "expected": ["enkazdaki-birine-yardim"], "type": "diakritiksiz"}
+{"id": "q029", "text": "yıkılan binanın altında kardeşim var taşları kaldırabilir miyim", "expected": ["enkazdaki-birine-yardim"], "type": "dolayli"}
+{"id": "q030", "text": "karşı binada bir çocuk sesi duyuyoruz yardım ekibi yok ne yapalım", "expected": ["enkazdaki-birine-yardim"], "type": "ses"}
+{"id": "q031", "text": "Ciddi bir kanamayı nasıl durdurabilirim?", "expected": ["ciddi-kanama"], "type": "resmi"}
+{"id": "q032", "text": "KAN DURMUYOR", "expected": ["ciddi-kanama"], "type": "panik"}
+{"id": "q033", "text": "kanamyı nasl durdurrm", "expected": ["ciddi-kanama"], "type": "yazim_hatasi"}
+{"id": "q034", "text": "bacağını cam kesti çok kan geliyo", "expected": ["ciddi-kanama"], "type": "gunluk"}
+{"id": "q035", "text": "koluna demir saplandı çıkarayım mı", "expected": ["ciddi-kanama"], "type": "dolayli"}
+{"id": "q036", "text": "Kalbi duran birine kalp masajı nasıl yapılır?", "expected": ["temel-yasam-destegi"], "type": "resmi"}
+{"id": "q037", "text": "nefes almıyor", "expected": ["temel-yasam-destegi"], "type": "panik"}
+{"id": "q038", "text": "babam yere dustu nefes almiyor ne yapayim", "expected": ["temel-yasam-destegi"], "type": "diakritiksiz"}
+{"id": "q039", "text": "CPR nasıl yapılıyo dakikada kaç bası", "expected": ["temel-yasam-destegi"], "type": "gunluk"}
+{"id": "q040", "text": "arkadaşım bayıldı uyandıramıyoruz nefes de almıyor gibi", "expected": ["temel-yasam-destegi"], "type": "ses"}
+{"id": "q041", "text": "Bilinci kapalı ama nefes alan birine ne yapılır?", "expected": ["bilinci-kapali-nefes-aliyor"], "type": "resmi"}
+{"id": "q042", "text": "bayıldı ama nefes alıyo napıyım", "expected": ["bilinci-kapali-nefes-aliyor"], "type": "gunluk"}
+{"id": "q043", "text": "kendinde degil ama nefes aliyor nasil yatirmaliyim", "expected": ["bilinci-kapali-nefes-aliyor"], "type": "diakritiksiz"}
+{"id": "q044", "text": "annem baygın kolonya koklatalım mı", "expected": ["bilinci-kapali-nefes-aliyor"], "type": "dolayli"}
+{"id": "q045", "text": "koma pozisyonu nasl verilr", "expected": ["bilinci-kapali-nefes-aliyor"], "type": "yazim_hatasi"}
+{"id": "q046", "text": "Uzun süre enkaz altında sıkışan bacak için ne yapılmalı?", "expected": ["ezilme-yaralanmasi"], "type": "resmi"}
+{"id": "q047", "text": "annemin kolu saatlerdir taşın altında sıkışmış", "expected": ["ezilme-yaralanmasi"], "type": "dolayli"}
+{"id": "q048", "text": "ezilme sendromu nedir ne yapmali", "expected": ["ezilme-yaralanmasi"], "type": "diakritiksiz"}
+{"id": "q049", "text": "enkazdan çıkardık iyi görünüyo hastaneye götürmesek olur mu", "expected": ["ezilme-yaralanmasi"], "type": "gunluk"}
+{"id": "q050", "text": "kurtarılan babamın idrarı kola renginde geliyor", "expected": ["ezilme-yaralanmasi"], "type": "dolayli"}
+{"id": "q051", "text": "Kırık şüphesinde nasıl atel yapılır?", "expected": ["kirik-ve-cikik"], "type": "resmi"}
+{"id": "q052", "text": "kolu kırıldı galiba çok şişti", "expected": ["kirik-ve-cikik"], "type": "gunluk"}
+{"id": "q053", "text": "bacagi kirildi nasil sabitlerim", "expected": ["kirik-ve-cikik"], "type": "diakritiksiz"}
+{"id": "q054", "text": "omzu cıktı yerne takabilirmiyim", "expected": ["kirik-ve-cikik"], "type": "yazim_hatasi"}
+{"id": "q055", "text": "düştükten sonra bileğini oynatamıyor aşırı ağrıyor", "expected": ["kirik-ve-cikik"], "type": "dolayli"}
+{"id": "q056", "text": "Başına darbe alan birinde nelere dikkat etmeliyim?", "expected": ["bas-ve-omurga-yaralanmasi"], "type": "resmi"}
+{"id": "q057", "text": "yüksekten düştü bacaklarını hissetmiyor", "expected": ["bas-ve-omurga-yaralanmasi"], "type": "dolayli"}
+{"id": "q058", "text": "boynunu incitmis olabilir kaldiralim mi", "expected": ["bas-ve-omurga-yaralanmasi"], "type": "diakritiksiz"}
+{"id": "q059", "text": "kafasını çarptı kusuyo", "expected": ["bas-ve-omurga-yaralanmasi"], "type": "gunluk"}
+{"id": "q060", "text": "kulağından kan geliyor başına beton düştü", "expected": ["bas-ve-omurga-yaralanmasi"], "type": "dolayli"}
+{"id": "q061", "text": "Yanık olduğunda ilk yardım nasıl yapılır?", "expected": ["yanik"], "type": "resmi"}
+{"id": "q062", "text": "elime kaynar su döküldü yanıyo", "expected": ["yanik"], "type": "gunluk"}
+{"id": "q063", "text": "yanik var dis macunu surelim mi", "expected": ["yanik"], "type": "diakritiksiz"}
+{"id": "q064", "text": "yanıkta kabarcık oluşt patlatsammı", "expected": ["yanik"], "type": "yazim_hatasi"}
+{"id": "q065", "text": "sobanın üstüne düştü kolu kızardı su topladı", "expected": ["yanik"], "type": "dolayli"}
+{"id": "q066", "text": "Şok belirtileri nelerdir ve ne yapılmalı?", "expected": ["sok"], "type": "resmi"}
+{"id": "q067", "text": "yaralı soğuk soğuk terliyor rengi bembeyaz nabzı çok hızlı", "expected": ["sok"], "type": "dolayli"}
+{"id": "q068", "text": "kan kaybetti rengi soldu titriyor", "expected": ["sok", "ciddi-kanama"], "type": "diakritiksiz"}
+{"id": "q069", "text": "kaza geçirdi sapsarı oldu bilinci gidip geliyo", "expected": ["sok"], "type": "gunluk"}
+{"id": "q070", "text": "şok geçiren birne ne yaplır", "expected": ["sok"], "type": "yazim_hatasi"}
+{"id": "q071", "text": "Boğazına yiyecek kaçan birine nasıl yardım ederim?", "expected": ["havayolu-tikanmasi"], "type": "resmi"}
+{"id": "q072", "text": "boğuluyor", "expected": ["havayolu-tikanmasi"], "type": "panik"}
+{"id": "q073", "text": "çocuğun boğazına şeker kaçtı nefes alamıyo", "expected": ["havayolu-tikanmasi"], "type": "gunluk"}
+{"id": "q074", "text": "heimlich manevrasi nasil yapilir", "expected": ["havayolu-tikanmasi"], "type": "diakritiksiz"}
+{"id": "q075", "text": "bebeğim bir şey yuttu morarıyor", "expected": ["havayolu-tikanmasi"], "type": "dolayli"}
+{"id": "q076", "text": "Donma tehlikesi geçiren birini nasıl ısıtırım?", "expected": ["hipotermi"], "type": "resmi"}
+{"id": "q077", "text": "çok üşüyoruz çocuk titremeyi kesti uyukluyo", "expected": ["hipotermi"], "type": "gunluk"}
+{"id": "q078", "text": "hipotermi belirtileri nelerdir", "expected": ["hipotermi"], "type": "diakritiksiz"}
+{"id": "q079", "text": "gece dışarıda kaldık dedemin dili dolanıyor elleri buz gibi", "expected": ["hipotermi"], "type": "dolayli"}
+{"id": "q080", "text": "üşüyen birine alkol verlirmi ısınsın diye", "expected": ["hipotermi"], "type": "yazim_hatasi"}
+{"id": "q081", "text": "Gaz kaçağı fark edersem ne yapmalıyım?", "expected": ["gaz-kacagi"], "type": "resmi"}
+{"id": "q082", "text": "evde gaz kokusu var ışığı açayım mı", "expected": ["gaz-kacagi"], "type": "gunluk"}
+{"id": "q083", "text": "dogalgaz kokuyor ne yapayim", "expected": ["gaz-kacagi"], "type": "diakritiksiz"}
+{"id": "q084", "text": "GAZ KOKUSU", "expected": ["gaz-kacagi"], "type": "panik"}
+{"id": "q085", "text": "binaya girince çürük yumurta gibi bir koku aldım", "expected": ["gaz-kacagi"], "type": "dolayli"}
+{"id": "q086", "text": "Bina içinde yangın çıkarsa nasıl tahliye olmalıyım?", "expected": ["yangin"], "type": "resmi"}
+{"id": "q087", "text": "mutfakta tava alev aldı su dökeyim mi", "expected": ["yangin"], "type": "gunluk"}
+{"id": "q088", "text": "her yer duman cikamiyorum", "expected": ["yangin"], "type": "diakritiksiz"}
+{"id": "q089", "text": "YANGIN VAR", "expected": ["yangin"], "type": "panik"}
+{"id": "q090", "text": "kapının arkası çok sıcak açayım mı", "expected": ["yangin"], "type": "dolayli"}
+{"id": "q091", "text": "Elektrik çarpan birine nasıl müdahale edilir?", "expected": ["elektrik-carpmasi"], "type": "resmi"}
+{"id": "q092", "text": "adamı elektrik çarptı hala kabloya değiyo", "expected": ["elektrik-carpmasi"], "type": "gunluk"}
+{"id": "q093", "text": "elektrik carpti bayildi", "expected": ["elektrik-carpmasi"], "type": "diakritiksiz"}
+{"id": "q094", "text": "deprem sonrası kopan kablo yerde kıvılcım çıkarıyor yanında biri yatıyor", "expected": ["elektrik-carpmasi"], "type": "dolayli"}
+{"id": "q095", "text": "elektirik çarpmasında ilk yrdım", "expected": ["elektrik-carpmasi"], "type": "yazim_hatasi"}
+{"id": "q096", "text": "İçme suyunu nasıl temizleyebilirim?", "expected": ["su-aritma"], "type": "resmi"}
+{"id": "q097", "text": "musluk suyu içilir mi şu an", "expected": ["su-aritma"], "type": "gunluk"}
+{"id": "q098", "text": "suyu camasir suyuyla nasil aritirim kac damla", "expected": ["su-aritma"], "type": "diakritiksiz"}
+{"id": "q099", "text": "elimizde sadece dere suyu var çocuklara içirebilir miyiz", "expected": ["su-aritma"], "type": "dolayli"}
+{"id": "q100", "text": "suyu kaç dakka kaynatmalyım", "expected": ["su-aritma"], "type": "yazim_hatasi"}
+{"id": "q101", "text": "Telefonumun şarjını en uzun süre nasıl koruyabilirim?", "expected": ["telefon-pili-ve-sebeke"], "type": "resmi"}
+{"id": "q102", "text": "şarj bitmek üzere şebeke de yok ne yapayım", "expected": ["telefon-pili-ve-sebeke"], "type": "gunluk"}
+{"id": "q103", "text": "sebeke yok 112 arayabilir miyim", "expected": ["telefon-pili-ve-sebeke"], "type": "diakritiksiz"}
+{"id": "q104", "text": "telefonda sadece acil çağrı yazıyor", "expected": ["telefon-pili-ve-sebeke"], "type": "dolayli"}
+{"id": "q105", "text": "internet yok aileme nasıl haber veririm", "expected": ["telefon-pili-ve-sebeke"], "type": "ses"}
+{"id": "q106", "text": "Kurtarma ekiplerine nasıl işaret verebilirim?", "expected": ["yardim-isareti-verme"], "type": "resmi"}
+{"id": "q107", "text": "helikopter geçiyo bizi nasıl görsün", "expected": ["yardim-isareti-verme"], "type": "gunluk"}
+{"id": "q108", "text": "duduk nasil calinir yardim icin", "expected": ["yardim-isareti-verme"], "type": "diakritiksiz"}
+{"id": "q109", "text": "geceleyin dağda mahsur kaldık fenerimiz var", "expected": ["yardim-isareti-verme"], "type": "dolayli"}
+{"id": "q110", "text": "sos işareti nasl verilr", "expected": ["yardim-isareti-verme"], "type": "yazim_hatasi"}
+{"id": "q111", "text": "Deprem çantasında neler bulunmalı?", "expected": ["deprem-cantasi"], "type": "resmi"}
+{"id": "q112", "text": "afet çantasına ne koyayım", "expected": ["deprem-cantasi"], "type": "gunluk"}
+{"id": "q113", "text": "deprem cantasi listesi", "expected": ["deprem-cantasi"], "type": "diakritiksiz"}
+{"id": "q114", "text": "depreme hazırlık için evde neler bulundurmalıyız", "expected": ["deprem-cantasi"], "type": "dolayli"}
+{"id": "q115", "text": "acil durm çantası hazrlama", "expected": ["deprem-cantasi"], "type": "yazim_hatasi"}
+{"id": "q116", "text": "Panik atak geçiren birine nasıl yardım ederim?", "expected": ["panik-ve-psikolojik-ilk-yardim"], "type": "resmi"}
+{"id": "q117", "text": "kızım sürekli ağlıyo titriyo korkudan", "expected": ["panik-ve-psikolojik-ilk-yardim"], "type": "gunluk"}
+{"id": "q118", "text": "nefes alamiyorum gibi hissediyorum cok korkuyorum", "expected": ["panik-ve-psikolojik-ilk-yardim"], "type": "diakritiksiz"}
+{"id": "q119", "text": "çocuklar artçılardan çok korkuyor onlara ne diyeyim", "expected": ["panik-ve-psikolojik-ilk-yardim"], "type": "dolayli"}
+{"id": "q120", "text": "arkadaşım deprem sonrası konuşmuyor boş boş bakıyor ne yapabilirim", "expected": ["panik-ve-psikolojik-ilk-yardim"], "type": "ses"}
+{"id": "q121", "text": "yarın hava yağmurlu mu", "expected": [], "type": "kapsam_disi"}
+{"id": "q122", "text": "galatasaray maçı kaç kaç bitti", "expected": [], "type": "kapsam_disi"}
+{"id": "q123", "text": "en iyi kek tarifi nedir", "expected": [], "type": "kapsam_disi"}
+{"id": "q124", "text": "dolar kuru bugün ne kadar", "expected": [], "type": "kapsam_disi"}
+{"id": "q125", "text": "bana bir şiir yaz", "expected": [], "type": "kapsam_disi"}
+{"id": "q126", "text": "ingilizce kelime öğrenmek istiyorum", "expected": [], "type": "kapsam_disi"}
+{"id": "q127", "text": "telefonuma oyun indirmek istiyorum", "expected": [], "type": "kapsam_disi"}
+{"id": "q128", "text": "en yakın kafe nerede", "expected": [], "type": "kapsam_disi"}
+{"id": "q129", "text": "kedim mama yemiyor", "expected": [], "type": "kapsam_disi"}
+{"id": "q130", "text": "araba lastiği nasıl değiştirilir", "expected": [], "type": "kapsam_disi"}
+{"id": "q131", "text": "evin elektrik faturası çok yüksek geldi", "expected": [], "type": "kapsam_disi"}
+{"id": "q132", "text": "doğalgaz faturası nasıl ödenir", "expected": [], "type": "kapsam_disi"}
+{"id": "q133", "text": "saçım dökülüyor ne yapmalıyım", "expected": [], "type": "kapsam_disi"}
+{"id": "q134", "text": "deprem nasıl oluşur bilimsel olarak anlat", "expected": [], "type": "kapsam_disi"}
+{"id": "q135", "text": "yemekte tuz fazla kaçtı", "expected": [], "type": "kapsam_disi"}
+{"id": "q136", "text": "bilgisayarım çok yavaş çalışıyor", "expected": [], "type": "kapsam_disi"}

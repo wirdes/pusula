@@ -1,0 +1,32 @@
+id: yanik
+title: Yanık
+category: ilk-yardim
+priority: yuksek
+summary: >
+  Yanığı hemen, en az 20 dakika boyunca serin akan suyla soğut. Buz, diş macunu ya da yoğurt sürme.
+steps:
+  - Kişiyi ısı kaynağından uzaklaştır; giysisi yanıyorsa dur, yere yat ve yuvarlan.
+  - Yanık bölgeyi en az 20 dakika serin (buz gibi olmayan) akan suyla soğut; su kısıtlıysa da mümkün olduğunca uzun soğut.
+  - Bölge şişmeden önce yüzük, saat ve bilezik gibi takıları çıkar.
+  - Yanığa yapışmamış giysileri çıkar; yapışanları çekme.
+  - Soğuttuktan sonra yanığı temiz ve gevşek bir örtüyle ya da streç filmle ört.
+  - Vücudun geri kalanını sıcak tut.
+dont:
+  - Buz, diş macunu, yoğurt, salça ya da yağ sürme.
+  - Su kabarcıklarını patlatma.
+seek_help: Yüz, el, ayak ve genital bölge yanıklarında, büyük yanıklarda, kimyasal ve elektrik yanıklarında ve çocuklardaki yanıklarda tıbbi yardım al.
+keywords:
+  - elime kaynar su döküldü
+  - yandı
+  - su topladı
+  - kabarcık patlatılır mı
+  - diş macunu sürülür mü
+  - sobaya düştü
+related: [elektrik-carpmasi, yangin]
+sources:
+  - name: European Resuscitation Council (ERC) İlk Yardım Kılavuzu 2021
+  - name: Sağlık Bakanlığı İlk Yardım Yönetmeliği (2015)
+review:
+  status: taslak
+  reviewer: null
+  date: null

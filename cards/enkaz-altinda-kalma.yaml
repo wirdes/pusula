@@ -1,0 +1,33 @@
+id: enkaz-altinda-kalma
+title: Enkaz altında kaldıysan
+category: deprem
+priority: kritik
+summary: >
+  Sakin olmaya çalış, enerjini ve havanı koru. Sürekli bağırmak yerine borulara ya da duvara vurarak, düdük çalarak ses ver.
+steps:
+  - Sakinleşmeye çalış; yavaş ve derin nefes al.
+  - Ağzını ve burnunu bir bezle ya da giysinle kapat; toz solumamaya çalış.
+  - Kanayan bir yaran varsa üzerine bastır.
+  - Borulara ya da duvara düzenli aralıklarla vur; düdüğün varsa çal. Üçlü vuruşlar dikkat çeker.
+  - Yalnızca yakında ses duyduğunda bağır; sürekli bağırmak enerjini tüketir ve toz yutmana yol açar.
+  - Kurtarma ekipleri dinleme yapmak için sessizlik isteyebilir; ses duyduğunda vurarak karşılık ver.
+  - Telefonun varsa pilini koru; şebeke çekiyorsa 112'yi ara ya da konumunu SMS ile bildir.
+dont:
+  - Kibrit ya da çakmak yakma; gaz kaçağı olabilir.
+  - Üzerindeki enkazı zorlayarak oynatma; çökmeyi artırabilir.
+  - Gereksiz hareketle enerjini ve havanı tüketme.
+keywords:
+  - enkaz altındayım
+  - göçük altında kaldım
+  - sıkıştım çıkamıyorum
+  - beton altında kaldım
+  - sesimi nasıl duyururum
+  - nefes almakta zorlanıyorum toz
+related: [ciddi-kanama, yardim-isareti-verme, telefon-pili-ve-sebeke, panik-ve-psikolojik-ilk-yardim]
+sources:
+  - name: AFAD afet farkındalık eğitimleri
+    url: https://www.afad.gov.tr
+review:
+  status: taslak
+  reviewer: null
+  date: null

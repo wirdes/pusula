@@ -1,0 +1,31 @@
+id: sok
+title: Şok belirtileri
+category: ilk-yardim
+priority: kritik
+summary: >
+  Soluk ve soğuk-terli cilt, hızlı ve zayıf nabız, hızlı nefes ve huzursuzluk şok belirtisi olabilir. Kişiyi yatır, sıcak tut ve hemen 112'yi ara.
+steps:
+  - Varsa nedeni tedavi et; örneğin kanamayı durdur.
+  - Kişiyi sırtüstü yatır.
+  - Bacak ya da kalça yaralanması yoksa bacaklarını yaklaşık 30 cm yukarı kaldır.
+  - Üstünü ört; altına battaniye ya da karton koyarak yerden gelen soğuğu kes.
+  - Sıkan giysileri gevşet ve kişiyi sakinleştir.
+  - 112'yi ara; bilincini ve nefesini sürekli izle.
+dont:
+  - Ağızdan yiyecek ya da içecek verme.
+  - Kişiyi yalnız bırakma.
+keywords:
+  - soğuk soğuk terliyor
+  - rengi bembeyaz oldu
+  - sapsarı
+  - nabzı çok hızlı
+  - kan kaybetti titriyor
+  - bilinci gidip geliyor
+related: [ciddi-kanama, bilinci-kapali-nefes-aliyor]
+sources:
+  - name: European Resuscitation Council (ERC) İlk Yardım Kılavuzu 2021
+  - name: Sağlık Bakanlığı İlk Yardım Yönetmeliği (2015)
+review:
+  status: taslak
+  reviewer: null
+  date: null

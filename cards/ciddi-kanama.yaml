@@ -1,0 +1,37 @@
+id: ciddi-kanama
+title: Ciddi kanamayı durdurma
+category: ilk-yardim
+priority: kritik
+summary: >
+  Yaranın üzerine temiz bir bezle doğrudan ve güçlü baskı uygula. Kanama durana kadar baskıyı bırakma.
+steps:
+  - Mümkünse eldiven ya da temiz bir poşetle elini koru.
+  - Yaranın üzerine temiz bir bez, gazlı bez ya da giysi koy ve avucunla sıkıca bastır.
+  - Bez kanla ıslanırsa kaldırma; üstüne yenisini ekleyip baskıya devam et.
+  - Kanama kontrol altına alınınca bezi sargıyla sıkıca sabitle.
+  - Kol ya da bacakta hayatı tehdit eden kanama baskıyla durmuyorsa ve turnike uygulamayı biliyorsan, yaranın 5–7 cm üstüne turnike uygula ve saatini not et.
+  - Kişiyi yatır, üşümesini önle ve şok belirtilerini izle.
+  - 112'yi ara.
+dont:
+  - Yaraya saplanmış cismi çıkarma; etrafını destekleyerek sabitle.
+  - Kanamayı kontrol etmek için bezi sık sık kaldırma.
+  - Uyguladığın turnikeyi gevşetme.
+seek_help: Kanama baskıyla durmuyorsa, yara derinse ya da kan fışkırıyorsa mutlaka tıbbi yardım gerekir.
+keywords:
+  - kan durmuyor
+  - çok kan kaybediyor
+  - cam kesti
+  - derin kesik
+  - kanama nasıl durdurulur
+  - koluna demir saplandı
+  - turnike
+related: [sok]
+sources:
+  - name: Sağlık Bakanlığı İlk Yardım Yönetmeliği (2015)
+  - name: European Resuscitation Council (ERC) İlk Yardım Kılavuzu 2021
+  - name: Türk Kızılay ilk yardım eğitimleri
+    url: https://www.kizilay.org.tr
+review:
+  status: taslak
+  reviewer: null
+  date: null

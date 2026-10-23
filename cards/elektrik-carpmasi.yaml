@@ -1,0 +1,29 @@
+id: elektrik-carpmasi
+title: Elektrik çarpması
+category: tehlike
+priority: kritik
+summary: >
+  Kişiye dokunmadan önce elektriği kes. Kesemiyorsan kuru ve yalıtkan bir cisimle kişiyi akımdan uzaklaştır.
+steps:
+  - Önce sigortayı ya da şalteri kapat, fişi çek.
+  - Kesemiyorsan kuru bir zeminde durarak kuru tahta ya da plastik gibi yalıtkan bir cisimle kişiyi kaynaktan uzaklaştır.
+  - Yüksek gerilim hattı koptuysa en az 20 metre uzak dur ve yetkilileri bekle.
+  - Bilincini ve nefesini kontrol et; normal nefes almıyorsa kalp masajına başla.
+  - Giriş ve çıkış yanıklarını serin suyla soğut ve temiz bir örtüyle ört.
+  - Görünürde iyi olsa bile sağlık kuruluşuna götür; kalp ritmi etkilenmiş olabilir.
+dont:
+  - Akım kesilmeden kişiye çıplak elle dokunma.
+  - Islak zeminde durarak müdahale etme.
+keywords:
+  - elektrik çarptı
+  - kabloya değiyor
+  - kopan kablo kıvılcım
+  - akıma kapıldı
+related: [temel-yasam-destegi, yanik]
+sources:
+  - name: European Resuscitation Council (ERC) İlk Yardım Kılavuzu 2021
+  - name: Sağlık Bakanlığı İlk Yardım Yönetmeliği (2015)
+review:
+  status: taslak
+  reviewer: null
+  date: null

@@ -1,0 +1,35 @@
+id: deprem-sonrasi-ilk-adimlar
+title: Sarsıntı bitince ilk yapılacaklar
+category: deprem
+priority: kritik
+summary: >
+  Önce kendini ve yanındakileri kontrol et, sonra sakince binadan çık ve açık alana ya da toplanma alanına git. Artçı sarsıntılara hazırlıklı ol.
+steps:
+  - Kendinde ve yanındakilerde yaralanma olup olmadığını kontrol et.
+  - Gaz kokusu yoksa ve güvenle ulaşabiliyorsan doğalgaz vanasını ve elektrik şalterini kapat.
+  - Cam kırıklarına karşı ayakkabı giy, deprem çantanı al.
+  - Asansör yerine merdivenleri kullanarak sakince binadan çık.
+  - Dışarıda binalardan uzak, açık bir alana ya da en yakın toplanma alanına git.
+  - Artçı sarsıntılar olabilir; her birinde yeniden çök, kapan, tutun.
+  - Telefonu yalnızca acil durumlar için kullan; yakınlarına kısa SMS gönder.
+dont:
+  - Hasarlı binaya eşya almak için geri girme.
+  - Kibrit, çakmak yakma ya da elektrik düğmelerine dokunma; gaz kaçağı olabilir.
+  - Asansör kullanma.
+  - Doğrulanmamış haberleri ve söylentileri yayma.
+keywords:
+  - deprem bitti ne yapmalıyım
+  - sarsıntı durdu
+  - binadan çıkmalı mıyım
+  - artçı deprem
+  - toplanma alanı
+  - hasarlı bina
+  - evime geri girebilir miyim
+related: [gaz-kacagi, telefon-pili-ve-sebeke, deprem-cantasi]
+sources:
+  - name: AFAD afet farkındalık eğitimleri
+    url: https://www.afad.gov.tr
+review:
+  status: taslak
+  reviewer: null
+  date: null

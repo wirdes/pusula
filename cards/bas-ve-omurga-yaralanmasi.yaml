@@ -1,0 +1,31 @@
+id: bas-ve-omurga-yaralanmasi
+title: Baş, boyun ve omurga yaralanması
+category: ilk-yardim
+priority: kritik
+summary: >
+  Başına, boynuna ya da sırtına darbe alan kişiyi yakın bir tehlike yoksa hareket ettirme. Baş, boyun ve gövdeyi tek parça halinde sabit tut.
+steps:
+  - Kişiye kımıldamamasını söyle; başını iki yanından ellerinle tutarak sabit tut.
+  - Yalnızca yangın ya da çökme gibi yakın bir tehlike varsa baş, boyun ve gövdeyi tek parça halinde hareket ettirerek uzaklaştır.
+  - Bilincini, nefesini ve konuşmasını izle; kusarsa tek parça halinde yan çevir.
+  - Bilinç bulanıklığı, kusma, kulak ya da burundan kan veya sıvı gelmesi, kol ve bacaklarda uyuşma ya da güç kaybı acil durum belirtisidir.
+  - 112'yi ara.
+dont:
+  - Başını kaldırıp altına yastık koyma.
+  - Kişiyi oturtmaya ya da yürütmeye çalışma.
+seek_help: Başına darbe alan ve bilinç değişikliği, kusma ya da uyuşma olan herkes acil tıbbi değerlendirme gerektirir.
+keywords:
+  - kafasını çarptı
+  - başına beton düştü
+  - yüksekten düştü
+  - bacaklarını hissetmiyor
+  - boynunu incitti
+  - kulağından kan geliyor
+related: [bilinci-kapali-nefes-aliyor, kirik-ve-cikik]
+sources:
+  - name: Sağlık Bakanlığı İlk Yardım Yönetmeliği (2015)
+  - name: European Resuscitation Council (ERC) İlk Yardım Kılavuzu 2021
+review:
+  status: taslak
+  reviewer: null
+  date: null

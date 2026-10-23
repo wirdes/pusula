@@ -1,0 +1,26 @@
+id: yardim-isareti-verme
+title: Kurtarma ekiplerine işaret verme
+category: iletisim
+priority: yuksek
+summary: >
+  Görünür ve duyulur ol. Üçlü işaret (üç düdük, üç ışık, üç vuruş) yardım çağrısı olarak bilinir; enerjini korumak için aralıklarla tekrarla.
+steps:
+  - Düdüğün varsa üç kez kısa çal, bir süre bekle ve tekrarla.
+  - Karanlıkta fenerle ya da telefon ışığıyla üç kez yak-söndür.
+  - Gündüz parlak renkli bir kumaşı salla ya da ayna veya camla güneş ışığını yansıtarak dikkat çek.
+  - Bulunduğun yeri yukarıdan görülebilecek şekilde iri harflerle YARDIM ya da SOS yazarak işaretle.
+  - Enerjini korumak için işaretleri sürekli değil, aralıklarla ver.
+keywords:
+  - helikopter bizi nasıl görsün
+  - düdük nasıl çalınır
+  - sos işareti
+  - mahsur kaldık
+  - fenerle işaret
+related: [enkaz-altinda-kalma, telefon-pili-ve-sebeke]
+sources:
+  - name: AFAD afet farkındalık eğitimleri
+    url: https://www.afad.gov.tr
+review:
+  status: taslak
+  reviewer: null
+  date: null
