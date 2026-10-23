@@ -217,6 +217,22 @@ def flow_groups(flows: list[dict]) -> dict[str, str]:
     return groups
 
 
+def describe_flow(flow: dict, titles: dict[str, str]) -> str:
+    """The flow's questions with each answer and where it leads, for LLM prompts."""
+    lines = []
+    for node in flow["nodes"].values():
+        lines.append(f"Soru: {node['question']}")
+        for answer in node["answers"]:
+            if answer.get("card"):
+                target = titles.get(answer["card"], answer["card"])
+            elif answer.get("next"):
+                target = "bir sonraki soru"
+            else:
+                target = "kart yok, yalnızca uyarı mesajı"
+            lines.append(f"  - {answer['label']} → {target}")
+    return "\n".join(lines)
+
+
 def flow_text(flow: dict) -> str:
     return "\n".join([flow["title"], " ".join(str(flow["summary"]).split())])
 

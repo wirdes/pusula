@@ -28,7 +28,9 @@ Deprem gibi afetlerde internet ve mobil şebeke çoğu zaman çöker. Pusula, te
 - [x] Zıt talimatlı durumlar için karar akışları: nefes alıyor / almıyor, sıcak / soğuk, enkazda kendim / başkası ([akışlar](flows/README.md))
 - [ ] Uygulama özelliklerine yönlendiren niyetler (toplanma alanı, konum paylaşma, acil numaralar, fener, düdük)
 - [ ] Resmi kaynaktan doğrulanmış acil numaralar ve toplanma alanı verisi
-- [ ] Küçük Türkçe arama modelinin eğitimi
+- [x] Sentetik eğitim verisi: gpt-oss-120b ile üretildi, Qwen3-235B ile yargılandı; 5.530 eğitim, 630 geliştirme örneği ([istatistikler](data/stats.md))
+- [ ] Pusula'nın kendi küçük Türkçe modelinin eğitimi ([eğitim planı](docs/EGITIM_PLANI.md))
+- [ ] Eksik kart: göğüs ağrısı ve kalp krizi belirtileri
 - [ ] iOS uygulaması: **PusulaApp** (Swift, ayrı repoda)
 
 ## Repo düzeni
@@ -38,8 +40,8 @@ Deprem gibi afetlerde internet ve mobil şebeke çoğu zaman çöker. Pusula, te
 | [`cards/`](cards/) | Bilgi kartları (YAML) ve kart formatının açıklaması |
 | [`flows/`](flows/) | Zıt talimatlı durumlar için kullanıcıya soru soran karar akışları |
 | [`eval/`](eval/) | Türkçe test soruları ve soru tipleri |
-| [`scripts/`](scripts/) | Doğrulama, deneme (`ask.py`) ve arama ölçüm betikleri |
-| [`docs/`](docs/) | Çalıştırma ve test rehberi |
+| [`scripts/`](scripts/) | Doğrulama, deneme (`ask.py`), arama ölçümü ve sentetik veri betikleri |
+| [`docs/`](docs/) | Çalıştırma rehberi ve eğitim planı |
 | [`results/`](results/) | Ölçüm sonuçları |
 
 ## Geliştirme

@@ -88,8 +88,11 @@ class EmbeddingRetriever:
     def _encode(self, texts: list[str], **kwargs) -> np.ndarray:
         return self.model.encode(texts, normalize_embeddings=True, convert_to_numpy=True, show_progress_bar=False, **kwargs)
 
+    def encode_queries(self, texts: list[str]) -> np.ndarray:
+        return self._encode([self.query_prefix + t for t in texts], **self.query_kwargs)
+
     def scores(self, query: str) -> np.ndarray:
-        return self.doc_emb @ self._encode([self.query_prefix + query], **self.query_kwargs)[0]
+        return self.doc_emb @ self.encode_queries([query])[0]
 
 
 def run_queries(
