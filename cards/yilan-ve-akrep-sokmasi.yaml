@@ -1,0 +1,32 @@
+id: yilan-ve-akrep-sokmasi
+title: Yılan ısırması ve akrep sokması
+category: ilk-yardim
+priority: yuksek
+summary: >
+  Kişiyi sakin ve hareketsiz tut, ısırılan uzvu atelle sabitle ve hemen tıbbi yardım al. Yarayı kesme, zehri emme, turnike uygulama.
+steps:
+  - Kişiyi hayvandan uzaklaştır, sakinleştir ve hareket etmemesini söyle; hareket zehrin yayılmasını hızlandırabilir.
+  - Yüzük, saat gibi sıkan takıları çıkar; bölge şişebilir.
+  - Isırılan uzvu kırık gibi atelle sabitle.
+  - Yarayı sabun ve suyla nazikçe yıka, temiz bir örtüyle kapat.
+  - 112'yi ara ya da en yakın sağlık kuruluşuna ulaştır; Ulusal Zehir Danışma Merkezi'ne (114) danışabilirsin.
+  - Hayvanın rengini ve şeklini hatırlamaya çalış ama yakalamaya ya da öldürmeye çalışma.
+  - Nefes darlığı, yaygın şişlik ya da bilinç bulanıklığı gelişirse durum acildir.
+dont:
+  - Yarayı kesme ya da ağızla zehri emmeye çalışma.
+  - Turnike uygulama ya da uzvu sıkıca bağlama.
+  - Alkol içirme.
+keywords:
+  - yılan ısırdı
+  - akrep soktu
+  - zehirli hayvan
+  - engerek
+  - ısırık şişti
+related: [ari-sokmasi-ve-alerjik-reaksiyon, kirik-ve-cikik]
+sources:
+  - name: Ulusal Zehir Danışma Merkezi (UZEM, 114)
+  - name: European Resuscitation Council (ERC) İlk Yardım Kılavuzu 2021
+review:
+  status: taslak
+  reviewer: null
+  date: null

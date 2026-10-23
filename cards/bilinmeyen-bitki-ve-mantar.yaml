@@ -1,0 +1,30 @@
+id: bilinmeyen-bitki-ve-mantar
+title: Tanımadığın bitki ve mantarları yeme
+category: hayatta-kalma
+priority: yuksek
+summary: >
+  Tanımadığın hiçbir mantarı, meyveyi ya da yabani bitkiyi yeme. Zehirli mantarlar yenebilenlere çok benzer ve öldürücü olabilir. İnsan günlerce yemeksiz dayanabilir; önce su ve sıcaklık gelir.
+steps:
+  - Yiyecek yerine su, barınak ve sıcak kalmaya öncelik ver.
+  - Emin olmadığın hiçbir mantarı, meyveyi ya da bitkiyi yeme.
+  - Zehirlenme belirtileri bulantı, kusma, ishal ve karın ağrısıdır; mantarda belirtiler saatler sonra başlayabilir.
+  - Belirtiler yedikten 6 saat ya da daha geç başladıysa bu daha tehlikeli bir zehirlenmenin işareti olabilir; kişi iyileşmiş gibi görünse bile tıbbi yardım şarttır.
+  - Şüphe varsa 112'yi ara; Ulusal Zehir Danışma Merkezi'ne (114) danış.
+  - Yenen mantardan ya da bitkiden bir örnek sakla ve sağlık ekibine göster.
+dont:
+  - Pişirmenin, kurutmanın ya da gümüş kaşık gibi halk testlerinin zehri yok ettiğine inanma.
+  - Hayvanların yediği bir bitkinin insan için de güvenli olduğunu varsayma.
+keywords:
+  - mantar zehirlenmesi
+  - yabani meyve
+  - zehirli bitki
+  - aç kaldık ne yiyelim
+  - 114 zehir danışma
+related: [su-bulma]
+sources:
+  - name: Ulusal Zehir Danışma Merkezi (UZEM, 114)
+  - name: Sağlık Bakanlığı mantar zehirlenmesi bilgilendirmeleri
+review:
+  status: taslak
+  reviewer: null
+  date: null

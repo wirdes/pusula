@@ -1,0 +1,33 @@
+id: dogada-kaybolma
+title: Ormanda ya da dağda kaybolduysan
+category: hayatta-kalma
+priority: yuksek
+summary: >
+  Dur, sakinleş, etrafını gözle ve plan yap. Çoğu zaman en güvenlisi olduğun yerde kalıp bulunmayı beklemektir.
+steps:
+  - Dur ve sakinleş; panikle yürümek seni daha da uzaklaştırır.
+  - Şebeke varsa 112'yi ara ya da konumunu SMS ile gönder ve pilini koru.
+  - Telefonundaki konum (GPS) internet olmadan da çalışır; koordinatlarını bir yere not et.
+  - Birine nereye gittiğini söylediysen olduğun yerde kal; arama ekipleri en son bilinen konumdan başlar.
+  - Açık ve görülebilir bir yerde bekle, parlak renkli bir eşyayı göze çarpacak şekilde yay.
+  - Hava kararmadan rüzgârdan korunaklı bir yer ve barınak hazırla.
+  - Aralıklarla üç düdük ya da üç ışıkla yardım işareti ver.
+dont:
+  - Karanlıkta yürümeye devam etme.
+  - Dik yamaçlardan ve uçurum kenarlarından kestirmeye çalışma.
+  - Dere yatağına inip dere boyunca körlemesine ilerleme; kayalık, şelale ve ani sel riski vardır.
+keywords:
+  - kayboldum
+  - yolumu bulamıyorum
+  - nerede olduğumu bilmiyorum
+  - orman
+  - dağ yürüyüşü
+related: [yon-bulma, barinak-ve-soguktan-korunma, yardim-isareti-verme, telefon-pili-ve-sebeke]
+sources:
+  - name: AFAD afet farkındalık eğitimleri
+    url: https://www.afad.gov.tr
+  - name: Arama kurtarma ekiplerinin doğada kaybolma rehberleri
+review:
+  status: taslak
+  reviewer: null
+  date: null

@@ -1,0 +1,32 @@
+id: ates-yakma
+title: Doğada güvenli ateş yakma ve söndürme
+category: hayatta-kalma
+priority: yuksek
+summary: >
+  Ateşi yalnızca ısınmak, su kaynatmak ya da işaret vermek gibi hayati bir ihtiyaç varsa yak. Kuru ve rüzgârlı havada asla yakma; işin bitince tamamen söndür.
+steps:
+  - Önce gerçekten gerekli olup olmadığını düşün; ormanda izinsiz ateş yakmak yasaktır ve küçük bir kıvılcım orman yangını başlatabilir.
+  - Ağaç dallarından, kuru otlardan ve çalılardan uzak, rüzgâr almayan bir yer seç.
+  - Çevresinde yaklaşık 3 metrelik alanı kuru ot ve yapraklardan temizle; mümkünse taşlarla çevrili toprak bir çukur hazırla.
+  - Önce ince ve kuru tutuşturucuyu (kuru ot, ince çıra, kâğıt), sonra parmak kalınlığında çubukları, en son kalın odunları ekle.
+  - Islak odun zor tutuşur; ağaç kabuğunun altındaki kuru kısımları ve ölü dalların iç kısmını kullan.
+  - Ateşi küçük tut ve asla başında kimse olmadan bırakma.
+  - Söndürürken üzerine bol su dök, karıştır ve tekrar su dök; elini yaklaştırdığında hiç sıcaklık kalmayana kadar devam et. Su yoksa toprakla tamamen ört.
+dont:
+  - Rüzgârlı ve kuru havada ya da ormana giriş yasağı olan dönemlerde ateş yakma.
+  - Çadırın ya da kapalı bir alanın içinde ateş yakma; karbonmonoksit zehirlenmesine yol açar.
+  - Ateşi canlandırmak için benzin ya da tiner kullanma.
+keywords:
+  - kamp ateşi
+  - odun tutuşmuyor
+  - ısınmak için ateş
+  - ateşi söndürmek
+  - orman yangını riski
+related: [orman-yangininda-kacis, barinak-ve-soguktan-korunma, karbonmonoksit-zehirlenmesi, hipotermi]
+sources:
+  - name: 6831 sayılı Orman Kanunu (ormanda ateş yakma yasağı)
+  - name: Orman Genel Müdürlüğü yangın önleme bilgilendirmeleri
+review:
+  status: taslak
+  reviewer: null
+  date: null

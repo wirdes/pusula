@@ -1,0 +1,32 @@
+id: karbonmonoksit-zehirlenmesi
+title: Karbonmonoksit zehirlenmesi (soba, mangal, jeneratör)
+category: tehlike
+priority: kritik
+summary: >
+  Kapalı ya da az havalanan bir yerde yanan soba, mangal, jeneratör veya araç egzozu karbonmonoksit üretir. Bu gaz kokusuz ve renksizdir, öldürücüdür. Baş ağrısı, baş dönmesi, bulantı ve uyku hali varsa hemen temiz havaya çık.
+steps:
+  - Belirtileri tanı; baş ağrısı, baş dönmesi, bulantı, halsizlik, uyku hali ve bilinç bulanıklığı. Aynı yerdeki birkaç kişide birden görülmesi tipiktir.
+  - Şüphelenirsen hemen kapı ve pencereleri aç, herkesi dışarı, temiz havaya çıkar.
+  - Güvenliyse sobayı, mangalı ya da jeneratörü söndür veya kapat.
+  - 112'yi ara; belirtiler geçse bile tıbbi değerlendirme gerekir.
+  - Bilinci kapalı ama normal nefes alıyorsa yan yatır; normal nefes almıyorsa kalp masajına başla.
+dont:
+  - Çadır, konteyner, araç ya da kapalı odada mangal, maltız, kömür veya jeneratör yakma.
+  - Jeneratörü kapı ve pencerelerin yakınında çalıştırma.
+  - Bacasının düzgün çalıştığından emin olmadığın sobalı odada uyuma.
+  - Egzozu karla tıkalı bir araçta motoru çalıştırma.
+keywords:
+  - karbonmonoksit
+  - soba zehirlenmesi
+  - mangal dumanı
+  - jeneratör zehirlenmesi
+  - kapalı alanda kömür yakmak
+related: [bilinci-kapali-nefes-aliyor, temel-yasam-destegi, kar-firtinasinda-aracta-mahsur]
+sources:
+  - name: Sağlık Bakanlığı karbonmonoksit zehirlenmesi bilgilendirmeleri
+  - name: AFAD afet farkındalık eğitimleri
+    url: https://www.afad.gov.tr
+review:
+  status: taslak
+  reviewer: null
+  date: null

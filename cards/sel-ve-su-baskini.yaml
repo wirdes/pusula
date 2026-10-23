@@ -1,0 +1,32 @@
+id: sel-ve-su-baskini
+title: Sel ve su baskını
+category: tehlike
+priority: kritik
+summary: >
+  Sel suyuna girme ve araçla geçmeye çalışma. Beklemeden yüksek bir yere çık.
+steps:
+  - Sel uyarısı duyarsan ya da suyun hızla yükseldiğini görürsen beklemeden yüksek bir yere çık.
+  - Binadaysan üst katlara çık; kapalı bir çatı arasına kapanıp kalma, gerekirse çatıya çıkıp işaret ver.
+  - Güvenliyse elektriği ana şalterden, gazı ana vanadan kapat.
+  - Dere yataklarından, alt geçitlerden, bodrum katlardan ve köprü altlarından uzak dur.
+  - Sel suyuna temas ettiysen ellerini temiz suyla yıka; sel suyu kanalizasyon ve kimyasal içerebilir.
+  - Su çekildikten sonra yetkililer güvenli demeden evine dönme.
+dont:
+  - Akan suyun içinden yürüme; 15 cm'lik akıntı bile insanı devirebilir.
+  - Sular altındaki yoldan araçla geçmeye çalışma; 30 cm'lik akan su bir aracı sürükleyebilir.
+  - Sel suyunu içme.
+keywords:
+  - sel geldi
+  - su baskını
+  - dere taştı
+  - ev su altında
+  - sel suyu
+related: [elektrik-carpmasi, su-aritma]
+sources:
+  - name: AFAD sel ve su baskını bilgilendirmeleri
+    url: https://www.afad.gov.tr
+  - name: Meteoroloji Genel Müdürlüğü uyarı ve bilgilendirmeleri
+review:
+  status: taslak
+  reviewer: null
+  date: null

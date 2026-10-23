@@ -1,0 +1,31 @@
+id: ari-sokmasi-ve-alerjik-reaksiyon
+title: Arı sokması ve ağır alerjik reaksiyon
+category: ilk-yardim
+priority: kritik
+summary: >
+  Arı sokmalarının çoğu zararsızdır. Ama nefes darlığı, yüzde, dudakta ya da dilde şişlik, yaygın kızarıklık hayatı tehdit eden alerjik reaksiyon (anafilaksi) belirtisidir; hemen 112'yi ara.
+steps:
+  - İğne deride kaldıysa tırnağınla ya da sert bir kartla yana doğru sıyırarak hemen çıkar.
+  - Bölgeyi yıka ve beze sarılı soğuk uygula.
+  - Anafilaksi belirtilerini izle; nefes darlığı, hırıltı, yüzde-dudakta-dilde şişlik, yaygın kaşıntı ve kızarıklık, baş dönmesi, bayılma.
+  - Bu belirtilerden biri varsa hemen 112'yi ara.
+  - Kişinin adrenalin oto-enjektörü (kalemi) varsa kullanmasına yardım et; uyluğun dış yüzüne, gerekirse giysinin üzerinden uygulanır.
+  - Nefes almakta zorlanıyorsa oturt; bayılacak gibiyse sırtüstü yatırıp bacaklarını kaldır.
+  - Normal nefes almıyorsa kalp masajına başla.
+dont:
+  - İğneyi cımbızla sıkarak çıkarma; kalan zehri içeri itebilir.
+  - Alerjik reaksiyon belirtisi olan kişiyi yalnız bırakma.
+keywords:
+  - arı soktu
+  - eşek arısı
+  - anafilaksi
+  - adrenalin kalemi
+  - alerjik şok
+related: [yilan-ve-akrep-sokmasi, temel-yasam-destegi, sok]
+sources:
+  - name: European Resuscitation Council (ERC) İlk Yardım Kılavuzu 2021
+  - name: Sağlık Bakanlığı İlk Yardım Yönetmeliği (2015)
+review:
+  status: taslak
+  reviewer: null
+  date: null

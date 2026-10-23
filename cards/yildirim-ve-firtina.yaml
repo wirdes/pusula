@@ -1,0 +1,31 @@
+id: yildirim-ve-firtina
+title: Yıldırım ve gök gürültülü fırtına
+category: tehlike
+priority: yuksek
+summary: >
+  Gök gürültüsünü duyuyorsan yıldırım çarpma mesafesindesin. Kapalı bir binaya ya da camları kapalı, metal tavanlı bir araca gir.
+steps:
+  - Bina ya da metal tavanlı bir araç en güvenli yerdir; camları kapat.
+  - Açıktaysan tepelerden, sırtlardan, tek başına duran ağaçlardan, direklerden ve sudan uzaklaş.
+  - Sığınacak yer yoksa alçak bir yerde çömel, ayaklarını birleştir, başını eğ ve kulaklarını kapat; yere uzanma.
+  - Grupsanız aranızda birkaç metre mesafe bırakın.
+  - Son gök gürültüsünden sonra en az 30 dakika bekle.
+  - Yıldırım çarpan kişiye dokunmak güvenlidir, vücudu elektrik taşımaz. Normal nefes almıyorsa hemen kalp masajına başla.
+dont:
+  - Ağaç altına sığınma.
+  - Çadırda ya da açık bir barakada güvende olduğunu düşünme.
+  - Metal çitlere, tellere dokunma ve sudan uzak dur.
+keywords:
+  - şimşek
+  - gök gürültüsü
+  - yıldırım çarpması
+  - fırtınada dışarıda kaldık
+  - açık arazide fırtına
+related: [temel-yasam-destegi, yanik]
+sources:
+  - name: Meteoroloji Genel Müdürlüğü uyarı ve bilgilendirmeleri
+  - name: European Resuscitation Council (ERC) Kılavuzları 2021
+review:
+  status: taslak
+  reviewer: null
+  date: null

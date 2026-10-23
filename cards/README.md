@@ -4,6 +4,14 @@ Pusula'nın verdiği her cevap bu klasördeki kartlardan gelir. Model kendi baş
 
 > **Uyarı:** Şu anki kartların hepsi **taslak**. Genel ilk yardım ve afet rehberleri temel alınarak yazıldı, ancak henüz bir sağlık profesyoneli tarafından satır satır kontrol edilmedi. `review.status: onaylandi` olmayan hiçbir kart gerçek kullanıcıya gösterilmemelidir.
 
+## Kapsam ilkesi
+
+Pusula internetsiz çalıştığı için yalnızca **zamanla değişmeyen ve doğrulanabilir** bilgiler içerir.
+
+- **Girer:** Nasıl yapılır bilgileri (ilk yardım, deprem, hayatta kalma, yön bulma), resmi kaynaktan doğrulanmış acil numaralar, sabit konum verileri (ör. toplanma alanları; ayrı bir veri katmanı olarak ve kaynağı ile güncelleme tarihi belirtilerek).
+- **Girmez:** Sürekli değişen bilgiler: yol ve trafik durumu, nöbetçi eczaneler, toplu taşıma saatleri, hava durumu, anlık afet haberleri. İnternetsiz güncel tutulamayan bilgi yanıltıcı olur.
+- **Bilerek eklenmez:** Yanlış uygulandığında ölümcül olabilecek bilgiler; örneğin hangi yabani mantar veya bitkinin yenebileceği. Bunun yerine "tanımadığını yeme" uyarısı verilir.
+
 ## Dosya düzeni
 
 - Her kart ayrı bir YAML dosyasıdır: `cards/<id>.yaml`.

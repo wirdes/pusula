@@ -20,11 +20,14 @@ Deprem gibi afetlerde internet ve mobil şebeke çoğu zaman çöker. Pusula, te
 
 ## Yol haritası
 
-- [x] Bilgi kartı formatı ve ilk 24 kart (taslak, uzman onayı bekliyor)
-- [x] Türkçe test soruları (136 soru, 8 tip)
+- [x] Bilgi kartı formatı ve 38 kart: sağlık, deprem, hayatta kalma, doğa ve tehlikeler (taslak, uzman onayı bekliyor)
+- [x] Türkçe test soruları (214 soru, 8 tip)
 - [x] Hazır embedding modelleriyle çevrimdışı arama ölçümü ([sonuçlar](results/README.md))
 - [ ] Kartların bir sağlık profesyoneli tarafından incelenmesi
 - [ ] İnsanların yazdığı bağımsız test seti
+- [ ] Zıt talimatlı durumlar için karar akışları (nefes alıyor / almıyor, sıcak / soğuk)
+- [ ] Uygulama özelliklerine yönlendiren niyetler (toplanma alanı, konum paylaşma, acil numaralar, fener, düdük)
+- [ ] Resmi kaynaktan doğrulanmış acil numaralar ve toplanma alanı verisi
 - [ ] Küçük Türkçe arama modelinin eğitimi
 - [ ] iOS uygulaması: **PusulaApp** (Swift, ayrı repoda)
 

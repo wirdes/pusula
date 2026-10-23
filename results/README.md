@@ -5,7 +5,25 @@
 | [`baseline.md`](baseline.md) | **Asıl ölçüm.** Kart metni: başlık, özet, adımlar. |
 | [`baseline_with_keywords.md`](baseline_with_keywords.md) | Anahtar kelimeler eklenmiş hali. Test sorularıyla örtüştüğü için **iyimser**; karşılaştırma dışında kullanmayın. |
 
-Ayrıntılı, soru bazında sonuçlar (`*.json`) betik her çalıştığında yeniden üretilir ve repoya eklenmez.
+Ayrıntılı, soru bazında sonuçlar (`*.json`) betik her çalıştığında yeniden üretilir ve repoya eklenmez. `baseline.md` her zaman en son ölçümü gösterir; aşağıdaki bölümler ölçümlerin geçmişini özetler.
+
+## İkinci ölçüm: hayatta kalma ve tehlike kartları (2026-10-23)
+
+14 yeni kart eklendi (karbonmonoksit, doğada kaybolma, ateş yakma, barınak, su bulma, yön bulma, bilinmeyen bitki ve mantar, yılan ve akrep, arı sokması ve alerji, sıcak çarpması, yıldırım, orman yangını, sel, kar fırtınasında araçta mahsur kalma). Toplam 38 kart, 214 soru (24'ü kapsam dışı). Yeni sorular, sızıntıyı önlemek için kartların anahtar kelimelerinden bağımsız yazıldı.
+
+| Model | Parametre | hit@1 | hit@3 | Kapsam dışı AUROC |
+|---|---|---|---|---|
+| ModernBERT-TR-Embed | 149M | **%75** | **%95** | **0,93** |
+| bge-m3 (üst sınır) | 568M | %69 | %92 | 0,88 |
+| multilingual-e5-small | 118M | %61 | %76 | 0,76 |
+| BM25 + 5 harf kökü | – | %57 | %70 | 0,73 |
+
+- Kart sayısı %58 arttı ama en iyi modelin başarısı korunuyor. Eski kartların sorularında ilk sıradan isabet %75'ten %73'e indi (karışabilecek kart sayısı arttı); yeni kartların sorularında %79 / %95–97.
+- **Yeni kritik hata:** "sıcaktan başı dönüyor kusuyor" gibi sıcak çarpması sorularının 3'ü **hipotermi** kartına gitti. Biri serinletmeyi, diğeri ısıtmayı söylüyor; yine zıt talimat.
+- Benzer konular birbirine karışıyor: bina yangını ile orman yangını, ateş yakma ile yangın, akrep ile arı sokması.
+- Tek kelimelik panik sorgular hâlâ en zayıf tip (%40). Örneğin "YILAN" sorusu yardım işareti kartına gitti.
+
+Zıt talimatlı kart çiftleri artık bir örüntü: nefes alıyor / almıyor, sıcak / soğuk, kendim / başkası. Bu çiftler karar akışlarında birleştirilmeli ya da uygulama, cevabı göstermeden önce ayırt edici bir soru sormalı ("Vücudu sıcak mı, soğuk mu?").
 
 ## İlk ölçüm (2026-10-23)
 

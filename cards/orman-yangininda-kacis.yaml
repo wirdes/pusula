@@ -1,0 +1,33 @@
+id: orman-yangininda-kacis
+title: Orman yangınından kaçış
+category: tehlike
+priority: kritik
+summary: >
+  Orman yangını gördüğünde hemen 112'ye bildir ve rüzgârın geldiği yöne, yanıcı madde az olan açık alanlara doğru uzaklaş. Asla yokuş yukarı kaçma.
+steps:
+  - Yangını hemen 112'ye bildir.
+  - Yetkililer tahliye çağrısı yaptıysa beklemeden ayrıl.
+  - Yangının ve rüzgârın yönüne bak; ateşin önüne değil, yanlarına ya da rüzgârın geldiği tarafa doğru uzaklaş.
+  - Yangın yokuş yukarı çok hızlı ilerler; yukarı doğru kaçma.
+  - Geniş yol, tarla, kayalık ya da daha önce yanmış alan gibi yanıcı madde az olan yerlere git.
+  - Dumana karşı ağzını ve burnunu ıslak bir bezle kapat ve alçakta kal.
+  - Araçtaysan camları ve havalandırmayı kapat, ağaçlık olmayan açık bir alana çekil ve aracın içinde kal; araç dışarıda kalmaktan daha güvenlidir.
+dont:
+  - Eşya kurtarmak için zaman kaybetme.
+  - Yokuş yukarı ya da yangının önüne doğru koşma.
+  - Dar bir vadiye ya da sık çalılığa sığınma.
+keywords:
+  - orman yangını
+  - alevler yaklaşıyor
+  - yangından kaçmak
+  - köye ateş geliyor
+  - yangın tahliyesi
+related: [yangin, ates-yakma, yanik]
+sources:
+  - name: Orman Genel Müdürlüğü yangın bilgilendirmeleri
+  - name: AFAD afet farkındalık eğitimleri
+    url: https://www.afad.gov.tr
+review:
+  status: taslak
+  reviewer: null
+  date: null

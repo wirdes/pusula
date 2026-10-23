@@ -1,0 +1,33 @@
+id: barinak-ve-soguktan-korunma
+title: Barınak kurma ve soğuktan korunma
+category: hayatta-kalma
+priority: yuksek
+summary: >
+  Soğuk, rüzgâr ve ıslaklık en büyük tehlikedir. Rüzgârı kesen küçük bir barınak kur ve yerden gelen soğuğa karşı altına kalın bir katman ser.
+steps:
+  - Barınak işine hava kararmadan başla.
+  - Kayalık çıkıntı, devrilmiş ağaç ya da sık çalılık gibi rüzgârı kesen doğal bir yer seç.
+  - Barınağı küçük tut; küçük bir alan vücut ısısıyla daha kolay ısınır.
+  - Altına kalın bir kat kuru yaprak, dal ya da karton serip yerden gelen soğuğu kes.
+  - Üstünü dallar, yapraklar, naylon ya da örtüyle kapat; varsa termal örtüyü kullan.
+  - Islak giysileri kurut ya da değiştir; başını, boynunu ve ellerini ört.
+  - Grupsanız birbirinize yakın oturarak ısının.
+dont:
+  - Doğrudan soğuk zemine uzanma.
+  - Dere yatağına, çukura ya da tek başına duran büyük bir ağacın altına barınak kurma.
+  - Barınağın içinde ateş yakma.
+keywords:
+  - barınak yapmak
+  - açıkta gece geçirmek
+  - üşümemek için ne yapmalı
+  - çadır olmadan
+  - rüzgârdan korunmak
+related: [hipotermi, dogada-kaybolma, ates-yakma]
+sources:
+  - name: Türk Kızılay afet hazırlık eğitimleri
+    url: https://www.kizilay.org.tr
+  - name: Arama kurtarma ekiplerinin doğada hayatta kalma rehberleri
+review:
+  status: taslak
+  reviewer: null
+  date: null

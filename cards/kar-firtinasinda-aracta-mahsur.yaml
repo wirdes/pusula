@@ -1,0 +1,32 @@
+id: kar-firtinasinda-aracta-mahsur
+title: Kar fırtınasında araçta mahsur kalma
+category: tehlike
+priority: yuksek
+summary: >
+  Araçta kal. Egzoz borusunu kardan temiz tut ve ısınmak için motoru saatte yalnızca yaklaşık 10 dakika çalıştır.
+steps:
+  - Araçtan ayrılma; araç rüzgârdan korur ve kurtarma ekiplerinin seni bulmasını kolaylaştırır.
+  - Şebeke varsa 112'yi ara ya da konumunu SMS ile bildir.
+  - Egzoz borusunun karla tıkanmadığından emin ol; tıkalıysa motoru çalıştırma.
+  - Isınmak için motoru saatte yaklaşık 10 dakika çalıştır ve bu sırada rüzgâr almayan taraftaki camı biraz arala.
+  - Battaniye, giysi ve paspaslarla üstünüzü örtün; birbirinize yakın oturun.
+  - Kan dolaşımını sürdürmek için kollarını ve bacaklarını ara ara hareket ettir.
+  - Görünür olmak için antene ya da kapıya parlak renkli bir bez bağla; gece iç ışığı kısa sürelerle yak.
+dont:
+  - Egzoz borusu kar altındayken motoru çalıştırma; araç içine karbonmonoksit dolar.
+  - Tipide araçtan uzaklaşıp yürüyerek yardım aramaya çalışma.
+keywords:
+  - kar fırtınası
+  - tipi
+  - araç kara saplandı
+  - karlı yolda mahsur
+  - araçta ısınmak
+related: [karbonmonoksit-zehirlenmesi, hipotermi, telefon-pili-ve-sebeke]
+sources:
+  - name: Karayolları Genel Müdürlüğü kış sürüşü bilgilendirmeleri
+  - name: AFAD afet farkındalık eğitimleri
+    url: https://www.afad.gov.tr
+review:
+  status: taslak
+  reviewer: null
+  date: null

@@ -1,0 +1,29 @@
+id: yon-bulma
+title: Yön bulma
+category: hayatta-kalma
+priority: normal
+summary: >
+  Telefonun pusulası ve konumu (GPS) internet olmadan da çalışır. Telefon yoksa güneşle, gölgeyle ya da gece Kutup Yıldızı ile kabaca yön bulabilirsin.
+steps:
+  - Kaybolduysan çoğu zaman yerinde kalmak daha güvenlidir; yalnızca gerçekten yürümen gerekiyorsa yön ara.
+  - Telefonundaki pusula ve konum özelliği internetsiz çalışır; koordinatlarını not et.
+  - Bölgenin haritasını önceden indirdiysen çevrimdışı haritayı kullan.
+  - Güneş kabaca doğudan doğar ve batıdan batar; Türkiye'de öğle saatlerinde güneş güney yönündedir.
+  - Gölge yöntemi için yere dik bir çubuk koy, gölgesinin ucunu işaretle, 15–20 dakika bekleyip yeni ucu işaretle. İlk işaretten ikinciye giden çizgi kabaca batıdan doğuya uzanır.
+  - Gece Kutup Yıldızı kuzeyi gösterir; Büyük Ayı'nın kepçe kısmının ucundaki iki yıldızın doğrultusunda bulunur.
+  - Yürüyeceksen uzakta sabit bir hedef seç, ona doğru ilerle ve arkanda iz bırak.
+dont:
+  - Ağaç gövdesindeki yosuna bakarak yön bulmaya güvenme; güvenilir bir yöntem değildir.
+keywords:
+  - kuzey hangi taraf
+  - pusulasız yön
+  - kutup yıldızı
+  - gölge yöntemi
+  - çevrimdışı harita
+related: [dogada-kaybolma, telefon-pili-ve-sebeke]
+sources:
+  - name: Arama kurtarma ekiplerinin doğada hayatta kalma rehberleri
+review:
+  status: taslak
+  reviewer: null
+  date: null

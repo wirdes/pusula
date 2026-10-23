@@ -1,0 +1,31 @@
+id: sicak-carpmasi
+title: Sıcak çarpması
+category: ilk-yardim
+priority: kritik
+summary: >
+  Sıcakta bilinç bulanıklığı, sıcak ve kızarık cilt, şiddetli baş ağrısı ve kusma sıcak çarpması belirtisi olabilir. Hayati tehlike vardır; kişiyi hemen serinlet ve 112'yi ara.
+steps:
+  - Kişiyi gölgeye ya da serin bir yere al.
+  - Fazla giysilerini çıkar.
+  - Vücudunu hızla serinlet; soğuk suyla ıslat ve yelpazele, boynuna, koltuk altlarına ve kasıklarına beze sarılı soğuk uygula.
+  - 112'yi ara.
+  - Bilinci açıksa ve yutabiliyorsa küçük yudumlarla serin su içir.
+  - Bilinci kapanırsa nefesini kontrol et; normal nefes alıyorsa yan yatır, almıyorsa kalp masajına başla.
+  - Yoğun terleme, halsizlik ve baş dönmesi sıcak bitkinliğinin belirtisidir; dinlenip serinlemezse sıcak çarpmasına dönüşebilir.
+dont:
+  - Bilinci bulanık kişiye zorla su içirme.
+  - Ateş düşürücü ilaç verme; sıcak çarpmasında işe yaramaz.
+keywords:
+  - güneş çarpması
+  - sıcaktan fenalaştı
+  - sıcak bitkinliği
+  - aşırı sıcak
+  - vücudu çok ısındı
+related: [bilinci-kapali-nefes-aliyor, su-bulma]
+sources:
+  - name: European Resuscitation Council (ERC) İlk Yardım Kılavuzu 2021
+  - name: Sağlık Bakanlığı sıcak hava dalgası bilgilendirmeleri
+review:
+  status: taslak
+  reviewer: null
+  date: null

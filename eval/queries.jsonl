@@ -96,7 +96,7 @@
 {"id": "q096", "text": "İçme suyunu nasıl temizleyebilirim?", "expected": ["su-aritma"], "type": "resmi"}
 {"id": "q097", "text": "musluk suyu içilir mi şu an", "expected": ["su-aritma"], "type": "gunluk"}
 {"id": "q098", "text": "suyu camasir suyuyla nasil aritirim kac damla", "expected": ["su-aritma"], "type": "diakritiksiz"}
-{"id": "q099", "text": "elimizde sadece dere suyu var çocuklara içirebilir miyiz", "expected": ["su-aritma"], "type": "dolayli"}
+{"id": "q099", "text": "elimizde sadece dere suyu var çocuklara içirebilir miyiz", "expected": ["su-aritma", "su-bulma"], "type": "dolayli"}
 {"id": "q100", "text": "suyu kaç dakka kaynatmalyım", "expected": ["su-aritma"], "type": "yazim_hatasi"}
 {"id": "q101", "text": "Telefonumun şarjını en uzun süre nasıl koruyabilirim?", "expected": ["telefon-pili-ve-sebeke"], "type": "resmi"}
 {"id": "q102", "text": "şarj bitmek üzere şebeke de yok ne yapayım", "expected": ["telefon-pili-ve-sebeke"], "type": "gunluk"}
@@ -134,3 +134,81 @@
 {"id": "q134", "text": "deprem nasıl oluşur bilimsel olarak anlat", "expected": [], "type": "kapsam_disi"}
 {"id": "q135", "text": "yemekte tuz fazla kaçtı", "expected": [], "type": "kapsam_disi"}
 {"id": "q136", "text": "bilgisayarım çok yavaş çalışıyor", "expected": [], "type": "kapsam_disi"}
+{"id": "q137", "text": "Kapalı alanda soba kullanırken zehirlenme belirtileri nelerdir?", "expected": ["karbonmonoksit-zehirlenmesi"], "type": "resmi"}
+{"id": "q138", "text": "konteynerde mangal yaktık herkesin başı ağrıyor uykumuz geldi", "expected": ["karbonmonoksit-zehirlenmesi"], "type": "dolayli"}
+{"id": "q139", "text": "jenerator calisiyor kafam donuyor midem bulaniyor", "expected": ["karbonmonoksit-zehirlenmesi"], "type": "diakritiksiz"}
+{"id": "q140", "text": "çadırda tüp sobası yaksak bi şey olur mu", "expected": ["karbonmonoksit-zehirlenmesi"], "type": "gunluk"}
+{"id": "q141", "text": "annemle babam sobalı odada uyandıramıyorum ikisi de çok uykulu", "expected": ["karbonmonoksit-zehirlenmesi"], "type": "ses"}
+{"id": "q142", "text": "Ormanda kaybolursam ne yapmalıyım?", "expected": ["dogada-kaybolma"], "type": "resmi"}
+{"id": "q143", "text": "yürüyüşte patikadan çıktık hiçbir yeri tanımıyoruz", "expected": ["dogada-kaybolma"], "type": "gunluk"}
+{"id": "q144", "text": "dagda yolumuzu sasirdik hava kariyor", "expected": ["dogada-kaybolma"], "type": "diakritiksiz"}
+{"id": "q145", "text": "KAYBOLDUK", "expected": ["dogada-kaybolma"], "type": "panik"}
+{"id": "q146", "text": "arkadaşlarımdan ayrı düştüm etrafta sadece ağaç var", "expected": ["dogada-kaybolma"], "type": "dolayli"}
+{"id": "q147", "text": "Doğada güvenli bir şekilde nasıl ateş yakılır?", "expected": ["ates-yakma"], "type": "resmi"}
+{"id": "q148", "text": "dallar nemli bi türlü yanmıyo", "expected": ["ates-yakma"], "type": "gunluk"}
+{"id": "q149", "text": "kamptaki atesi nasil tam olarak sonduruz", "expected": ["ates-yakma"], "type": "diakritiksiz"}
+{"id": "q150", "text": "gece çok soğuk olacak ısınmak için odun tutuşturmamız lazım", "expected": ["ates-yakma"], "type": "dolayli"}
+{"id": "q151", "text": "ormnda ateş yakmak yasakmı", "expected": ["ates-yakma"], "type": "yazim_hatasi"}
+{"id": "q152", "text": "Doğada gece geçirmek zorunda kalırsam nasıl korunaklı bir yer yaparım?", "expected": ["barinak-ve-soguktan-korunma"], "type": "resmi"}
+{"id": "q153", "text": "çadırımız yok gece burda kalcaz ne yapalım", "expected": ["barinak-ve-soguktan-korunma"], "type": "gunluk"}
+{"id": "q154", "text": "ruzgar cok sert gece donmamak icin ne yapabiliriz", "expected": ["barinak-ve-soguktan-korunma", "hipotermi"], "type": "diakritiksiz"}
+{"id": "q155", "text": "yere yatınca soğuk içimize işliyor", "expected": ["barinak-ve-soguktan-korunma"], "type": "dolayli"}
+{"id": "q156", "text": "dağda kaldık hava kararıyor üstümüzü örtecek bir şey yok", "expected": ["barinak-ve-soguktan-korunma"], "type": "ses"}
+{"id": "q157", "text": "Doğada içme suyu nasıl bulunur?", "expected": ["su-bulma"], "type": "resmi"}
+{"id": "q158", "text": "suyumuz bitti etrafta dere falan yok", "expected": ["su-bulma"], "type": "gunluk"}
+{"id": "q159", "text": "kar yiyerek susuzluk gecer mi", "expected": ["su-bulma"], "type": "diakritiksiz"}
+{"id": "q160", "text": "iki gündür yağmur yağıyor bunu biriktirip içebilir miyiz", "expected": ["su-bulma"], "type": "dolayli"}
+{"id": "q161", "text": "deniz suyu içilirmi susadk", "expected": ["su-bulma"], "type": "yazim_hatasi"}
+{"id": "q162", "text": "Pusula olmadan yön nasıl bulunur?", "expected": ["yon-bulma"], "type": "resmi"}
+{"id": "q163", "text": "kuzey ne tarafta anlamadım", "expected": ["yon-bulma"], "type": "gunluk"}
+{"id": "q164", "text": "gunese bakarak yon bulma", "expected": ["yon-bulma"], "type": "diakritiksiz"}
+{"id": "q165", "text": "gece gökyüzüne bakıp nereye gideceğimizi çıkarabilir miyiz", "expected": ["yon-bulma"], "type": "dolayli"}
+{"id": "q166", "text": "harita açılmıyor hangi yöne yürüyelim bilmiyoruz", "expected": ["yon-bulma", "dogada-kaybolma"], "type": "ses"}
+{"id": "q167", "text": "Ormanda bulduğum mantarlar yenir mi?", "expected": ["bilinmeyen-bitki-ve-mantar"], "type": "resmi"}
+{"id": "q168", "text": "aç kaldık şu kırmızı meyveleri yiyebilir miyiz", "expected": ["bilinmeyen-bitki-ve-mantar"], "type": "gunluk"}
+{"id": "q169", "text": "topladigimiz mantarlari yedik midemiz bulaniyor", "expected": ["bilinmeyen-bitki-ve-mantar"], "type": "diakritiksiz"}
+{"id": "q170", "text": "toplayıp pişirdiğimiz otları yedikten sonra çocuk kusmaya başladı", "expected": ["bilinmeyen-bitki-ve-mantar"], "type": "dolayli"}
+{"id": "q171", "text": "zehirli mantr nasıl anlaşılr", "expected": ["bilinmeyen-bitki-ve-mantar"], "type": "yazim_hatasi"}
+{"id": "q172", "text": "Yılan ısırmasında ilk yardım nasıl yapılır?", "expected": ["yilan-ve-akrep-sokmasi"], "type": "resmi"}
+{"id": "q173", "text": "akrep iğnesini batırdı ayağı şişiyo", "expected": ["yilan-ve-akrep-sokmasi"], "type": "gunluk"}
+{"id": "q174", "text": "yilan isirdi zehri emmeli miyiz", "expected": ["yilan-ve-akrep-sokmasi"], "type": "diakritiksiz"}
+{"id": "q175", "text": "taşları kaldırırken elime kuyruğu kıvrık bir böcek iğne batırdı çok yanıyor", "expected": ["yilan-ve-akrep-sokmasi"], "type": "dolayli"}
+{"id": "q176", "text": "YILAN", "expected": ["yilan-ve-akrep-sokmasi"], "type": "panik"}
+{"id": "q177", "text": "Arı sokmasında ne yapılmalı?", "expected": ["ari-sokmasi-ve-alerjik-reaksiyon"], "type": "resmi"}
+{"id": "q178", "text": "arı iğnesinden sonra dudakları şişti nefes almakta zorlanıyor", "expected": ["ari-sokmasi-ve-alerjik-reaksiyon"], "type": "dolayli"}
+{"id": "q179", "text": "ari igne birakti derinin icinde kaldi", "expected": ["ari-sokmasi-ve-alerjik-reaksiyon"], "type": "diakritiksiz"}
+{"id": "q180", "text": "sarıca arı sokunca kızın alerjisi tutuyor iğnesi yanımızda", "expected": ["ari-sokmasi-ve-alerjik-reaksiyon"], "type": "gunluk"}
+{"id": "q181", "text": "anaflaksi belirtilri nelrdir", "expected": ["ari-sokmasi-ve-alerjik-reaksiyon"], "type": "yazim_hatasi"}
+{"id": "q182", "text": "Sıcak çarpması belirtileri nelerdir ve ne yapılmalı?", "expected": ["sicak-carpmasi"], "type": "resmi"}
+{"id": "q183", "text": "tarlada güneşin altında çalışırken bayılıverdi", "expected": ["sicak-carpmasi"], "type": "gunluk"}
+{"id": "q184", "text": "sicaktan basi donuyor kusuyor", "expected": ["sicak-carpmasi"], "type": "diakritiksiz"}
+{"id": "q185", "text": "öğlen güneşinde yürüdük şimdi saçma sapan konuşuyor cildi kıpkırmızı", "expected": ["sicak-carpmasi"], "type": "dolayli"}
+{"id": "q186", "text": "dedem sıcakta dışarıda kaldı çok halsiz terlemiyor bile", "expected": ["sicak-carpmasi"], "type": "ses"}
+{"id": "q187", "text": "Gök gürültülü fırtınada açık arazideysem ne yapmalıyım?", "expected": ["yildirim-ve-firtina"], "type": "resmi"}
+{"id": "q188", "text": "şimşekler çakıyo ağacın altına mı girelim", "expected": ["yildirim-ve-firtina"], "type": "gunluk"}
+{"id": "q189", "text": "yildirim carpan birine dokunulur mu", "expected": ["yildirim-ve-firtina"], "type": "diakritiksiz"}
+{"id": "q190", "text": "tepedeyiz gök gürlüyor saçlarımız diken diken oldu", "expected": ["yildirim-ve-firtina"], "type": "dolayli"}
+{"id": "q191", "text": "fırtnada çadırda kalmak güvenlimi", "expected": ["yildirim-ve-firtina"], "type": "yazim_hatasi"}
+{"id": "q192", "text": "Orman yangını yaklaşırsa nasıl kaçmalıyım?", "expected": ["orman-yangininda-kacis"], "type": "resmi"}
+{"id": "q193", "text": "tepenin arkasından duman geliyo alevler görünüyo", "expected": ["orman-yangininda-kacis"], "type": "gunluk"}
+{"id": "q194", "text": "ormanlik alan yaniyor arabayla yol kapandi", "expected": ["orman-yangininda-kacis"], "type": "diakritiksiz"}
+{"id": "q195", "text": "rüzgar ateşi bizim mahalleye doğru getiriyor ne tarafa gidelim", "expected": ["orman-yangininda-kacis"], "type": "dolayli"}
+{"id": "q196", "text": "AĞAÇLAR YANIYOR", "expected": ["orman-yangininda-kacis"], "type": "panik"}
+{"id": "q197", "text": "Sel baskınında ne yapmalıyım?", "expected": ["sel-ve-su-baskini"], "type": "resmi"}
+{"id": "q198", "text": "su eve doluyo bodrum kat tamamen battı", "expected": ["sel-ve-su-baskini"], "type": "gunluk"}
+{"id": "q199", "text": "yol su altinda arabayla icinden gecebilir miyiz", "expected": ["sel-ve-su-baskini"], "type": "diakritiksiz"}
+{"id": "q200", "text": "yağmurdan sonra sokaklar göle döndü su hızla yükseliyor", "expected": ["sel-ve-su-baskini"], "type": "dolayli"}
+{"id": "q201", "text": "selde suyun içinde yürümek tehlikelimi", "expected": ["sel-ve-su-baskini"], "type": "yazim_hatasi"}
+{"id": "q202", "text": "Kar fırtınasında araçta mahsur kalırsam ne yapmalıyım?", "expected": ["kar-firtinasinda-aracta-mahsur"], "type": "resmi"}
+{"id": "q203", "text": "yolda kaldık araba kara gömüldü", "expected": ["kar-firtinasinda-aracta-mahsur"], "type": "gunluk"}
+{"id": "q204", "text": "karda kalan arabada motoru calistirip isinabilir miyiz", "expected": ["kar-firtinasinda-aracta-mahsur"], "type": "diakritiksiz"}
+{"id": "q205", "text": "geceden beri karlı yolda bekliyoruz benzin azalıyor çocuklar üşüyor", "expected": ["kar-firtinasinda-aracta-mahsur"], "type": "dolayli"}
+{"id": "q206", "text": "kar yağıyor yol kapandı arabadan inip köye yürüyelim mi", "expected": ["kar-firtinasinda-aracta-mahsur"], "type": "ses"}
+{"id": "q207", "text": "mangalda köfte nasıl pişirilir", "expected": [], "type": "kapsam_disi"}
+{"id": "q208", "text": "kamp için hangi çadırı almalıyım", "expected": [], "type": "kapsam_disi"}
+{"id": "q209", "text": "arı balı neye iyi gelir", "expected": [], "type": "kapsam_disi"}
+{"id": "q210", "text": "yılan hikayesi ne demek", "expected": [], "type": "kapsam_disi"}
+{"id": "q211", "text": "piknik için güzel bir yer önerir misin", "expected": [], "type": "kapsam_disi"}
+{"id": "q212", "text": "kremalı mantar çorbası tarifi", "expected": [], "type": "kapsam_disi"}
+{"id": "q213", "text": "yıldız falıma göre bugün nasıl geçecek", "expected": [], "type": "kapsam_disi"}
+{"id": "q214", "text": "eski sobalar antika olarak satılır mı", "expected": [], "type": "kapsam_disi"}

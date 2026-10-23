@@ -1,0 +1,29 @@
+id: su-bulma
+title: Doğada su bulma
+category: hayatta-kalma
+priority: yuksek
+summary: >
+  Su, yiyecekten çok daha önemlidir. Akan su durgun sudan iyidir, ama doğada bulduğun her su içmeden önce arıtılmalıdır.
+steps:
+  - Elindeki suyu idareli kullan; terlemeyi azaltmak için sıcak saatlerde gölgede dinlen.
+  - Akan dere ve kaynak suyunu durgun suya tercih et.
+  - Yağmur suyunu temiz bir naylon, branda ya da kapla topla.
+  - Kar ve buzu ağzına almadan önce erit; doğrudan yemek vücut ısını düşürür.
+  - Bulduğun her suyu içmeden önce kaynat ya da dezenfekte et.
+dont:
+  - Deniz suyu ya da idrar içme; susuzluğu artırır.
+  - Yakıt, kimyasal ya da hayvan leşi bulaşmış olabilecek suyu içme.
+keywords:
+  - susuz kaldık
+  - içecek su yok
+  - kaynak suyu
+  - kar eritmek
+  - yağmur suyu
+related: [su-aritma, sicak-carpmasi]
+sources:
+  - name: Dünya Sağlık Örgütü (WHO) içme suyu kalitesi rehberi
+  - name: Arama kurtarma ekiplerinin doğada hayatta kalma rehberleri
+review:
+  status: taslak
+  reviewer: null
+  date: null

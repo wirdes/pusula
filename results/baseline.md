@@ -1,7 +1,7 @@
 # Çevrimdışı arama ölçümü
 
 - Tarih: 2026-10-23
-- Kart sayısı: 24 (hepsi taslak), soru sayısı: 136 (16 kapsam dışı)
+- Kart sayısı: 38 (hepsi taslak), soru sayısı: 214 (24 kapsam dışı)
 - Kart metni: title, summary, steps
 - Donanım: PC işlemcisi (CPU), sorgular tek tek kodlandı. Süreler telefonda farklı olur, yalnızca modelleri kıyaslamak içindir.
 
@@ -9,14 +9,14 @@
 
 | Model | Parametre (M) | hit@1 | hit@3 | MRR | Kapsam dışı AUROC | Sorgu süresi (ms) |
 |---|---|---|---|---|---|---|
-| modernbert-tr-embed | 149 | 75 | 95 | 85 | 0.95 | 39.8 |
-| bge-m3 | 568 | 72 | 91 | 82 | 0.90 | 71.9 |
-| e5-small | 118 | 61 | 79 | 70 | 0.82 | 9.3 |
-| bert-turkish-nli-stsb | 111 | 55 | 74 | 67 | 0.93 | 20.2 |
-| minilm-l12-multilingual | 118 | 52 | 75 | 66 | 0.89 | 8.8 |
-| bm25-f5 | – | 52 | 72 | 64 | 0.78 | 0.0 |
-| static-mrl-multilingual | 108 | 42 | 59 | 54 | 0.73 | 0.3 |
-| bm25 | – | 42 | 62 | 53 | 0.67 | 0.0 |
+| modernbert-tr-embed | 149 | 75 | 95 | 85 | 0.93 | 42.6 |
+| bge-m3 | 568 | 69 | 92 | 80 | 0.88 | 72.3 |
+| e5-small | 118 | 61 | 76 | 70 | 0.76 | 8.9 |
+| bm25-f5 | – | 57 | 70 | 65 | 0.73 | 0.0 |
+| bert-turkish-nli-stsb | 111 | 51 | 73 | 65 | 0.91 | 20.4 |
+| minilm-l12-multilingual | 118 | 49 | 71 | 62 | 0.88 | 8.8 |
+| bm25 | – | 46 | 56 | 53 | 0.68 | 0.0 |
+| static-mrl-multilingual | 108 | 38 | 56 | 50 | 0.73 | 0.3 |
 
 hit@1: doğru kart ilk sırada (%). hit@3: ilk üçte (%). MRR: ortalama ters sıra (%). AUROC: kapsam dışı soruları en yüksek benzerlik skoruna bakarak ayırabilme (0,5 rastgele, 1,0 kusursuz).
 
@@ -24,14 +24,14 @@ hit@1: doğru kart ilk sırada (%). hit@3: ilk üçte (%). MRR: ortalama ters s�
 
 | Model | resmi | gunluk | diakritiksiz | yazim_hatasi | panik | dolayli | ses |
 |---|---|---|---|---|---|---|---|
-| modernbert-tr-embed | 96 | 79 | 70 | 83 | 57 | 60 | 60 |
-| bge-m3 | 88 | 79 | 61 | 100 | 29 | 60 | 60 |
-| e5-small | 88 | 58 | 52 | 75 | 57 | 44 | 40 |
-| bert-turkish-nli-stsb | 71 | 54 | 57 | 67 | 0 | 52 | 40 |
-| minilm-l12-multilingual | 67 | 67 | 43 | 67 | 0 | 44 | 40 |
-| bm25-f5 | 50 | 54 | 48 | 67 | 57 | 52 | 20 |
-| static-mrl-multilingual | 54 | 46 | 39 | 33 | 43 | 36 | 40 |
-| bm25 | 54 | 38 | 43 | 42 | 29 | 40 | 20 |
+| modernbert-tr-embed | 95 | 82 | 70 | 78 | 40 | 67 | 60 |
+| bge-m3 | 92 | 71 | 70 | 89 | 30 | 54 | 40 |
+| e5-small | 89 | 53 | 57 | 78 | 40 | 44 | 60 |
+| bm25-f5 | 76 | 42 | 62 | 67 | 70 | 49 | 30 |
+| bert-turkish-nli-stsb | 79 | 45 | 54 | 56 | 10 | 41 | 20 |
+| minilm-l12-multilingual | 63 | 58 | 41 | 61 | 0 | 46 | 40 |
+| bm25 | 66 | 29 | 57 | 50 | 30 | 44 | 10 |
+| static-mrl-multilingual | 50 | 34 | 43 | 50 | 30 | 23 | 40 |
 
 ## En iyi modelin (modernbert-tr-embed) ilk sırada bulamadığı sorular
 
@@ -63,7 +63,24 @@ hit@1: doğru kart ilk sırada (%). hit@3: ilk üçte (%). MRR: ortalama ters s�
 | boğuluyor | panik | havayolu-tikanmasi | enkaz-altinda-kalma |
 | heimlich manevrasi nasil yapilir | diakritiksiz | havayolu-tikanmasi | yardim-isareti-verme |
 | binaya girince çürük yumurta gibi bir koku aldım | dolayli | gaz-kacagi | deprem-sonrasi-ilk-adimlar |
-| her yer duman cikamiyorum | diakritiksiz | yangin | gaz-kacagi |
+| her yer duman cikamiyorum | diakritiksiz | yangin | orman-yangininda-kacis |
+| YANGIN VAR | panik | yangin | orman-yangininda-kacis |
 | telefonda sadece acil çağrı yazıyor | dolayli | telefon-pili-ve-sebeke | yardim-isareti-verme |
+| geceleyin dağda mahsur kaldık fenerimiz var | dolayli | yardim-isareti-verme | dogada-kaybolma |
 | nefes alamiyorum gibi hissediyorum cok korkuyorum | diakritiksiz | panik-ve-psikolojik-ilk-yardim | bilinci-kapali-nefes-aliyor |
 | arkadaşım deprem sonrası konuşmuyor boş boş bakıyor ne yapabilirim | ses | panik-ve-psikolojik-ilk-yardim | deprem-sonrasi-ilk-adimlar |
+| dagda yolumuzu sasirdik hava kariyor | diakritiksiz | dogada-kaybolma | kar-firtinasinda-aracta-mahsur |
+| kamptaki atesi nasil tam olarak sonduruz | diakritiksiz | ates-yakma | yangin |
+| yere yatınca soğuk içimize işliyor | dolayli | barinak-ve-soguktan-korunma | hipotermi |
+| dağda kaldık hava kararıyor üstümüzü örtecek bir şey yok | ses | barinak-ve-soguktan-korunma | kar-firtinasinda-aracta-mahsur |
+| suyumuz bitti etrafta dere falan yok | gunluk | su-bulma | sel-ve-su-baskini |
+| deniz suyu içilirmi susadk | yazim_hatasi | su-bulma | su-aritma |
+| akrep iğnesini batırdı ayağı şişiyo | gunluk | yilan-ve-akrep-sokmasi | ari-sokmasi-ve-alerjik-reaksiyon |
+| YILAN | panik | yilan-ve-akrep-sokmasi | yardim-isareti-verme |
+| sicaktan basi donuyor kusuyor | diakritiksiz | sicak-carpmasi | hipotermi |
+| öğlen güneşinde yürüdük şimdi saçma sapan konuşuyor cildi kıpkırmızı | dolayli | sicak-carpmasi | hipotermi |
+| dedem sıcakta dışarıda kaldı çok halsiz terlemiyor bile | ses | sicak-carpmasi | hipotermi |
+| Gök gürültülü fırtınada açık arazideysem ne yapmalıyım? | resmi | yildirim-ve-firtina | deprem-ani-disarida |
+| yildirim carpan birine dokunulur mu | diakritiksiz | yildirim-ve-firtina | havayolu-tikanmasi |
+| fırtnada çadırda kalmak güvenlimi | yazim_hatasi | yildirim-ve-firtina | deprem-ani-disarida |
+| AĞAÇLAR YANIYOR | panik | orman-yangininda-kacis | ates-yakma |
