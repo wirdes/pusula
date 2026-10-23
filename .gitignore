@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# Model weights and caches (keep these outside OneDrive)
+models/
+.cache/
+*.gguf
+*.safetensors
+*.bin
+*.pt
+*.onnx
+*.tflite
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
