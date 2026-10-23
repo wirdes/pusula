@@ -1,0 +1,32 @@
+id: vucut-isisi
+title: Aşırı sıcak ya da aşırı soğuktan fenalaşma
+category: ilk-yardim
+priority: kritik
+summary: >
+  Halsizlik, baş dönmesi, bilinç bulanıklığı ve konuşmada bozulma hem aşırı sıcakta hem aşırı soğukta görülebilir, ama ilk yardımı tam tersidir. Önce kişinin vücudunun sıcak mı soğuk mu olduğunu belirle.
+start: cilt
+nodes:
+  cilt:
+    question: Kişinin alnına ve gövdesine dokun. Cildi nasıl?
+    answers:
+      - label: Sıcak ve kızarık
+        card: sicak-carpmasi
+      - label: Soğuk ve soluk; titriyor olabilir
+        card: hipotermi
+      - label: Emin değilim
+        next: ortam
+  ortam:
+    question: Son saatlerde nasıl bir ortamdaydı?
+    answers:
+      - label: Sıcakta, güneş altında ya da çok sıcak bir yerde
+        card: sicak-carpmasi
+      - label: Soğukta, ıslak ya da rüzgârlı bir yerde
+        card: hipotermi
+      - label: Bilmiyorum
+        message: 112'yi ara. Kişiyi güneşten ve rüzgârdan korunaklı bir yerde, sırtüstü ya da yan yatırarak tut ve nefesini izle.
+sources:
+  - name: European Resuscitation Council (ERC) İlk Yardım Kılavuzu 2021
+review:
+  status: taslak
+  reviewer: null
+  date: null

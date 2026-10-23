@@ -13,7 +13,7 @@ Deprem gibi afetlerde internet ve mobil şebeke çoğu zaman çöker. Pusula, te
 ## Yaklaşım
 
 - **Önce arama:** Cevaplar uzmanlarca kontrol edilmiş bilgi kartlarından gelir; model kendi başına tavsiye üretmez.
-- **Sabit protokoller:** Kalp masajı ve kanama kontrolü gibi kritik adımlar karar ağacı olarak tutulur.
+- **Karar akışları:** Birbirine benzeyen ama ilk yardımı tam tersi olan durumlarda (ör. nefes alıyor mu, almıyor mu) uygulama tahmin etmez, kullanıcıya kısa bir soru sorar.
 - **Küçük modeller:** Türkçe arama (embedding) modeli, durum sınıflandırıcı, diakritik ve noktalama düzeltici.
 - **Pil dostu:** Varsayılan mod hafif aramadır; büyük dil modeli isteğe bağlıdır.
 - **Sesli kullanım:** Çevrimdışı konuşma tanıma ve sesli okuma (planlanıyor).
@@ -25,7 +25,7 @@ Deprem gibi afetlerde internet ve mobil şebeke çoğu zaman çöker. Pusula, te
 - [x] Hazır embedding modelleriyle çevrimdışı arama ölçümü ([sonuçlar](results/README.md))
 - [ ] Kartların bir sağlık profesyoneli tarafından incelenmesi
 - [ ] İnsanların yazdığı bağımsız test seti
-- [ ] Zıt talimatlı durumlar için karar akışları (nefes alıyor / almıyor, sıcak / soğuk)
+- [x] Zıt talimatlı durumlar için karar akışları: nefes alıyor / almıyor, sıcak / soğuk, enkazda kendim / başkası ([akışlar](flows/README.md))
 - [ ] Uygulama özelliklerine yönlendiren niyetler (toplanma alanı, konum paylaşma, acil numaralar, fener, düdük)
 - [ ] Resmi kaynaktan doğrulanmış acil numaralar ve toplanma alanı verisi
 - [ ] Küçük Türkçe arama modelinin eğitimi
@@ -36,6 +36,7 @@ Deprem gibi afetlerde internet ve mobil şebeke çoğu zaman çöker. Pusula, te
 | Klasör | İçerik |
 |---|---|
 | [`cards/`](cards/) | Bilgi kartları (YAML) ve kart formatının açıklaması |
+| [`flows/`](flows/) | Zıt talimatlı durumlar için kullanıcıya soru soran karar akışları |
 | [`eval/`](eval/) | Türkçe test soruları ve soru tipleri |
 | [`scripts/`](scripts/) | Doğrulama, deneme (`ask.py`) ve arama ölçüm betikleri |
 | [`docs/`](docs/) | Çalıştırma ve test rehberi |

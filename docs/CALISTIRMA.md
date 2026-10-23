@@ -54,6 +54,17 @@ Araç, benzerlik skoruna göre üç şekilde cevap verir:
 | 0,50 – 0,58 | Emin değilim: en yakın üç kart listelenir, kullanıcı seçer |
 | 0,50'nin altı | "Bu konuda bir kartım yok. Hayati bir durumsa 112'yi ara." |
 
+Bulunan sonuç bir [karar akışına](../flows/README.md) bağlıysa (ör. "nefes almıyor", "sıcaktan başı dönüyor"), araç kartı doğrudan göstermez. Önce akışın sorusunu sorar ve numaralı seçenekler sunar; cevabın numarasını yazınca doğru kart açılır:
+
+```
+  Tepki vermeyen ya da bayılmış kişi  (akış: bilinc-ve-nefes, skor 0.69)
+    Kişiye yüksek sesle seslen ve omzuna hafifçe dokun. Gözünü açıyor, konuşuyor ya da kıpırdıyor mu?
+      1) Hayır, hiç tepki vermiyor
+      2) Evet, tepki veriyor
+      3) Emin değilim
+    Cevap numarası:
+```
+
 Eşikler küçük ve aynı yazar tarafından hazırlanmış bir test setinden seçildi (bkz. [`scripts/ask.py`](../scripts/ask.py)). Gerçek kullanıcı sorularıyla yeniden ayarlanmaları gerekir.
 
 Başka bir modelle karşılaştırmak için:

@@ -1,0 +1,29 @@
+id: enkaz-durumu
+title: Enkaz altında kalma
+category: deprem
+priority: kritik
+summary: >
+  Enkaz altında kalan kişinin kendisi mi, yoksa ona ulaşmaya çalışan biri mi olduğuna göre yapılacaklar değişir. Uzun süre sıkışmış bir kol ya da bacak, kurtarıldıktan sonra da hayati tehlike taşır.
+start: kim
+nodes:
+  kim:
+    question: Enkaz altında olan sen misin?
+    answers:
+      - label: Evet, ben enkaz altındayım
+        card: enkaz-altinda-kalma
+      - label: Hayır, başka biri enkaz altında ya da az önce çıkarıldı
+        next: sikisma
+  sikisma:
+    question: Kişinin kolu ya da bacağı uzun süre (bir saat ya da daha fazla) enkaz altında sıkışmış mı, ya da sıkışmış mıydı?
+    answers:
+      - label: Evet
+        card: ezilme-yaralanmasi
+      - label: Hayır ya da bilmiyorum
+        card: enkazdaki-birine-yardim
+sources:
+  - name: AFAD afet farkındalık eğitimleri
+    url: https://www.afad.gov.tr
+review:
+  status: taslak
+  reviewer: null
+  date: null

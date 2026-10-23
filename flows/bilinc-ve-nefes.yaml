@@ -1,0 +1,33 @@
+id: bilinc-ve-nefes
+title: Tepki vermeyen ya da bayılmış kişi
+category: ilk-yardim
+priority: kritik
+summary: >
+  Kişi seslenince ve dokununca tepki vermiyorsa, yapılacak şey nefes alıp almadığına bağlıdır. Önce normal nefes alıp almadığını kontrol et.
+start: tepki
+nodes:
+  tepki:
+    question: Kişiye yüksek sesle seslen ve omzuna hafifçe dokun. Gözünü açıyor, konuşuyor ya da kıpırdıyor mu?
+    answers:
+      - label: Hayır, hiç tepki vermiyor
+        next: nefes
+      - label: Evet, tepki veriyor
+        message: Kişinin bilinci açık. Yanında kal ve ne olduğunu sor. Nefes almakta zorlanıyorsa oturt. Göğüs ağrısı, ciddi kanama ya da bilinç bulanıklığı varsa 112'yi ara.
+      - label: Emin değilim
+        next: nefes
+  nefes:
+    question: Kişi normal nefes alıyor mu? Göğsünün düzenli inip kalktığına en fazla 10 saniye bak.
+    answers:
+      - label: Hayır, nefes almıyor ya da yalnızca hırıltılı, düzensiz soluyor
+        card: temel-yasam-destegi
+      - label: Evet, normal nefes alıyor
+        card: bilinci-kapali-nefes-aliyor
+      - label: Emin değilim
+        card: temel-yasam-destegi
+        note: Emin değilsen nefes almıyor kabul et ve hemen kalp masajına başla.
+sources:
+  - name: European Resuscitation Council (ERC) Temel Yaşam Desteği Kılavuzu 2021
+review:
+  status: taslak
+  reviewer: null
+  date: null

@@ -8,23 +8,35 @@ from __future__ import annotations
 import sys
 from collections import Counter
 
-from cards import keyword_overlaps, load_cards, load_queries, validate_cards, validate_queries
+from cards import (
+    flow_cards,
+    keyword_overlaps,
+    load_cards,
+    load_flows,
+    load_queries,
+    validate_cards,
+    validate_flows,
+    validate_queries,
+)
 
 
 def main() -> int:
     if hasattr(sys.stdout, "reconfigure"):
         sys.stdout.reconfigure(encoding="utf-8")
     cards = load_cards()
+    flows = load_flows()
     queries = load_queries()
     card_ids = {c["id"] for c in cards if c.get("id")}
 
-    errors = validate_cards(cards) + validate_queries(queries, card_ids)
+    errors = validate_cards(cards) + validate_flows(flows, card_ids) + validate_queries(queries, card_ids)
 
     per_card = Counter(cid for q in queries for cid in q.get("expected") or [])
     by_status = Counter((c.get("review") or {}).get("status") for c in cards)
     by_type = Counter(q.get("type") for q in queries)
 
     print(f"Cards: {len(cards)}  ({', '.join(f'{k}={v}' for k, v in sorted(by_status.items(), key=str))})")
+    for flow in flows:
+        print(f"Flow {flow.get('id')}: {', '.join(sorted(flow_cards(flow)))}")
     print(f"Queries: {len(queries)}  ({', '.join(f'{k}={v}' for k, v in sorted(by_type.items(), key=str))})")
     uncovered = sorted(cid for cid in card_ids if per_card[cid] < 3)
     if uncovered:

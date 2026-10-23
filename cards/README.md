@@ -73,4 +73,6 @@ review:
 2. Bir sağlık profesyoneli (hekim, paramedik, ilk yardım eğitmeni) kartı kaynaklarla karşılaştırır, düzeltir ve durumu `inceleniyor` yapar.
 3. Son kontrolden sonra `onaylandi`, `reviewer` ve `date` alanları doldurulur.
 
-`kritik` öncelikli kartlar (kalp masajı, ciddi kanama vb.) ileride uygulamada sabit, adım adım akışlara dönüştürülecek.
+## Karar akışları
+
+Birbirine benzeyen ama talimatları zıt olan kartlar (ör. kalp masajı ile yan yatırma) doğrudan aramaya bırakılmaz; [`flows/`](../flows/) klasöründeki bir karar akışına bağlanır. Arama bu kartlardan birini bulduğunda uygulama önce akışın sorusunu sorar. Yeni bir kart, mevcut bir kartla karışıp tam ters bir talimata yol açabiliyorsa onu da bir akışa bağlayın.

@@ -2,10 +2,31 @@
 
 | Dosya | İçerik |
 |---|---|
-| [`baseline.md`](baseline.md) | **Asıl ölçüm.** Kart metni: başlık, özet, adımlar. |
+| [`baseline.md`](baseline.md) | **Asıl ölçüm.** Kartlar ve karar akışları birlikte; kart metni: başlık, özet, adımlar. |
+| [`baseline_cards_only.md`](baseline_cards_only.md) | Aynı ölçüm, karar akışları olmadan (karşılaştırma için). |
 | [`baseline_with_keywords.md`](baseline_with_keywords.md) | Anahtar kelimeler eklenmiş hali. Test sorularıyla örtüştüğü için **iyimser**; karşılaştırma dışında kullanmayın. |
 
 Ayrıntılı, soru bazında sonuçlar (`*.json`) betik her çalıştığında yeniden üretilir ve repoya eklenmez. `baseline.md` her zaman en son ölçümü gösterir; aşağıdaki bölümler ölçümlerin geçmişini özetler.
+
+## Üçüncü ölçüm: karar akışları (2026-10-23)
+
+Zıt talimatlı kartlar üç [karar akışına](../flows/README.md) bağlandı: nefes alıyor / almıyor, sıcak / soğuk, enkazda kendim / başkası. Arama bu kartlardan birini bulduğunda uygulama kartı göstermek yerine akışın sorusunu soruyor. Ölçümde bulunan hedef, beklenen karta götüren akışsa isabet sayıldı. 38 kart, 3 akış, 214 soru; internet kapalıyken ölçüldü.
+
+| ModernBERT-TR-Embed | Yalnızca kartlar | Kartlar + akışlar |
+|---|---|---|
+| hit@1 | %75 | **%81** |
+| hit@3 | %95 | %95 |
+| Zıt talimatlı kartın ilk sırada çıktığı soru | **6** | **0** |
+| Akışın düzelttiği soru | – | 10 |
+| Akışın bozduğu soru | – | 0 |
+| Kullanıcıya fazladan soru sorulan sorgu | – | %23 |
+
+- Daha önce kalp masajı yerine yan yatırma, sıcak çarpması yerine hipotermi, kendisi için olan kart yerine başkasına yardım kartı çıkan 10 sorunun hepsi artık akışın sorusuyla doğru karta ulaşıyor.
+- Bedeli: kapsam içi soruların %23'ünde kullanıcı tek tuşla bir soru cevaplıyor. Hayati durumlarda bu kabul edilebilir bir maliyet.
+- Akış diğer modellere de yaradı: bge-m3 %69 → %74, e5-small %61 → %65.
+- 10 soru yanlış bir akışa gidiyor (ör. "kolu kırıldı galiba çok şişti" → enkaz akışı). Bunların hepsi akışlardan önce de yanlış karta gidiyordu; akışlar yeni bir hata eklemedi.
+
+**Giderilen bir tasarım açığı:** "nefes alamıyorum gibi hissediyorum, çok korkuyorum" diyen, bilinci açık ve panik halindeki biri de bilinç ve nefes akışına düşüyordu. Akışın ilk sorusu "Normal nefes alıyor mu?" olduğu için bu kişiye uygun değildi. Akışın başına, temel yaşam desteğinin de ilk adımı olan **"Seslenince ve dokununca tepki veriyor mu?"** sorusu eklendi. Tepki veren kişi kalp masajı yoluna girmiyor, 112'yi ne zaman araması gerektiğini söyleyen bir mesaj görüyor.
 
 ## İkinci ölçüm: hayatta kalma ve tehlike kartları (2026-10-23)
 

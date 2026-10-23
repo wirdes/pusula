@@ -5,10 +5,15 @@ reports hit@1, hit@3 and MRR per model and per query type. Out-of-scope queries
 are scored by how well the top similarity separates them from in-scope ones
 (AUROC), which tells us whether a "no matching card" threshold is workable.
 
+Decision flows are searched alongside cards. A hit on a flow, or on any card a
+flow leads to, counts as reaching that flow: the app then asks the flow's
+question, and an honest answer leads to the expected card.
+
 Usage:
   python scripts/retrieval_baseline.py                  # all models; downloads on first run
   python scripts/retrieval_baseline.py --offline        # never touch the network
   python scripts/retrieval_baseline.py --models bm25,e5-small
+  python scripts/retrieval_baseline.py --no-flows       # cards only, for comparison
 """
 
 from __future__ import annotations
@@ -23,7 +28,17 @@ from datetime import date
 
 import numpy as np
 
-from cards import DEFAULT_TEXT_FIELDS, REPO_ROOT, card_text, load_cards, load_queries, tokenize
+from cards import (
+    DEFAULT_TEXT_FIELDS,
+    REPO_ROOT,
+    card_text,
+    flow_groups,
+    flow_text,
+    load_cards,
+    load_flows,
+    load_queries,
+    tokenize,
+)
 
 RESULTS_DIR = REPO_ROOT / "results"
 
@@ -77,7 +92,9 @@ class EmbeddingRetriever:
         return self.doc_emb @ self._encode([self.query_prefix + query], **self.query_kwargs)[0]
 
 
-def run_queries(retriever, queries: list[dict], card_ids: list[str]) -> tuple[list[dict], list[float]]:
+def run_queries(
+    retriever, queries: list[dict], target_ids: list[str], groups: dict[str, str], flow_ids: set[str]
+) -> tuple[list[dict], list[float]]:
     retriever.scores(queries[0]["text"])  # warm-up so the first timing is not a cold start
     rows, latencies = [], []
     for query in queries:
@@ -85,8 +102,12 @@ def run_queries(retriever, queries: list[dict], card_ids: list[str]) -> tuple[li
         scores = retriever.scores(query["text"])
         latencies.append(time.perf_counter() - start)
         order = np.argsort(-scores)
-        ranked = [card_ids[i] for i in order]
-        rank = next((r for r, cid in enumerate(ranked[:10], 1) if cid in query["expected"]), None)
+        raw = [target_ids[i] for i in order]
+        # Cards inside a flow collapse onto the flow, so the flow shows up once in the ranking.
+        ranked = list(dict.fromkeys(groups.get(t, t) for t in raw))
+        expected = {groups.get(e, e) for e in query["expected"]}
+        rank = next((r for r, target in enumerate(ranked[:10], 1) if target in expected), None)
+        first_card = next(t for t in raw if t not in flow_ids)
         rows.append({
             "id": query["id"],
             "text": query["text"],
@@ -94,6 +115,10 @@ def run_queries(retriever, queries: list[dict], card_ids: list[str]) -> tuple[li
             "expected": query["expected"],
             "rank": rank,
             "top3": ranked[:3],
+            "first_card": first_card,
+            "asks_question": ranked[0] in flow_ids,
+            # Ranking cards alone would have shown a wrong card, but the flow's question leads to the right one.
+            "saved_by_flow": rank == 1 and first_card not in query["expected"],
             "top_score": float(scores[order[0]]),
         })
     return rows, latencies
@@ -126,6 +151,8 @@ def summarize(rows: list[dict]) -> dict:
         "overall": rank_stats(in_scope),
         "by_type": {t: rank_stats([r for r in in_scope if r["type"] == t]) for t in IN_SCOPE_TYPES},
         "oos_auroc": auroc([r["top_score"] for r in in_scope], [r["top_score"] for r in out_scope]),
+        "asks_question_rate": sum(r["asks_question"] for r in in_scope) / len(in_scope) if in_scope else None,
+        "saved_by_flow": sum(r["saved_by_flow"] for r in in_scope),
         "misses": [r for r in in_scope if r["rank"] != 1],
     }
 
@@ -142,13 +169,14 @@ def write_markdown(report: dict, path) -> None:
         f"- Tarih: {report['date']}",
         f"- Kart sayısı: {report['n_cards']} (hepsi taslak), soru sayısı: {report['n_queries']} "
         f"({report['n_out_of_scope']} kapsam dışı)",
+        f"- Karar akışları: {report['n_flows']}" if report["use_flows"] else "- Karar akışları: kullanılmadı (yalnızca kartlar)",
         f"- Kart metni: {', '.join(report['fields'])}",
         "- Donanım: PC işlemcisi (CPU), sorgular tek tek kodlandı. Süreler telefonda farklı olur, yalnızca modelleri kıyaslamak içindir.",
         "",
         "## Genel sonuç",
         "",
-        "| Model | Parametre (M) | hit@1 | hit@3 | MRR | Kapsam dışı AUROC | Sorgu süresi (ms) |",
-        "|---|---|---|---|---|---|---|",
+        "| Model | Parametre (M) | hit@1 | hit@3 | MRR | Kapsam dışı AUROC | Soru sorulan (%) | Akışla düzelen | Sorgu süresi (ms) |",
+        "|---|---|---|---|---|---|---|---|---|",
     ]
     ordered = sorted(models.items(), key=lambda kv: -kv[1]["overall"]["mrr"])
     for name, m in ordered:
@@ -156,12 +184,15 @@ def write_markdown(report: dict, path) -> None:
         auc = "–" if m["oos_auroc"] is None else f"{m['oos_auroc']:.2f}"
         lines.append(
             f"| {name} | {params} | {pct(m['overall']['hit@1'])} | {pct(m['overall']['hit@3'])} | "
-            f"{pct(m['overall']['mrr'])} | {auc} | {m['median_query_ms']:.1f} |"
+            f"{pct(m['overall']['mrr'])} | {auc} | {pct(m['asks_question_rate'])} | {m['saved_by_flow']} | "
+            f"{m['median_query_ms']:.1f} |"
         )
     lines += [
         "",
-        "hit@1: doğru kart ilk sırada (%). hit@3: ilk üçte (%). MRR: ortalama ters sıra (%). "
-        "AUROC: kapsam dışı soruları en yüksek benzerlik skoruna bakarak ayırabilme (0,5 rastgele, 1,0 kusursuz).",
+        "hit@1: doğru kart ya da doğru karta götüren akış ilk sırada (%). hit@3: ilk üçte (%). MRR: ortalama ters sıra (%). "
+        "AUROC: kapsam dışı soruları en yüksek benzerlik skoruna bakarak ayırabilme (0,5 rastgele, 1,0 kusursuz). "
+        "Soru sorulan: kapsam içi soruların kaçında kullanıcıya akış sorusu soruluyor. "
+        "Akışla düzelen: yalnızca kartlara bakılsaydı yanlış kart çıkacakken akışın sorusuyla doğru karta ulaşılan soru sayısı.",
         "",
         "## Soru tipine göre hit@1 (%)",
         "",
@@ -174,7 +205,7 @@ def write_markdown(report: dict, path) -> None:
     if ordered:
         best_name, best = ordered[0]
         lines += ["", f"## En iyi modelin ({best_name}) ilk sırada bulamadığı sorular", ""]
-        lines += ["| Soru | Tip | Beklenen | Bulunan ilk kart |", "|---|---|---|---|"]
+        lines += ["| Soru | Tip | Beklenen | Bulunan ilk kart ya da akış |", "|---|---|---|---|"]
         for miss in best["misses"]:
             lines.append(f"| {miss['text']} | {miss['type']} | {', '.join(miss['expected'])} | {miss['top3'][0]} |")
 
@@ -193,6 +224,7 @@ def main() -> int:
     parser.add_argument("--fields", default=",".join(DEFAULT_TEXT_FIELDS), help="card fields used as the passage")
     parser.add_argument("--offline", action="store_true", help="use only models already in the local cache")
     parser.add_argument("--out", default="baseline", help="output file name (without extension) under results/")
+    parser.add_argument("--no-flows", action="store_true", help="search cards only, ignoring decision flows")
     args = parser.parse_args()
 
     if args.offline:
@@ -206,14 +238,19 @@ def main() -> int:
     fields = tuple(f.strip() for f in args.fields.split(",") if f.strip())
 
     cards = load_cards()
+    flows = [] if args.no_flows else load_flows()
     queries = load_queries()
-    card_ids = [c["id"] for c in cards]
-    docs = [card_text(c, fields) for c in cards]
+    target_ids = [c["id"] for c in cards] + [f["id"] for f in flows]
+    docs = [card_text(c, fields) for c in cards] + [flow_text(f) for f in flows]
+    groups = flow_groups(flows)
+    flow_ids = {f["id"] for f in flows}
 
     report = {
         "date": date.today().isoformat(),
         "fields": list(fields),
         "n_cards": len(cards),
+        "n_flows": len(flows),
+        "use_flows": not args.no_flows,
         "n_queries": len(queries),
         "n_out_of_scope": sum(q["type"] == OUT_OF_SCOPE for q in queries),
         "offline": args.offline,
@@ -231,7 +268,7 @@ def main() -> int:
                 retriever = EmbeddingRetriever(EMBEDDING_MODELS[name], docs)
                 model_id = EMBEDDING_MODELS[name]["id"]
             load_s = time.perf_counter() - start
-            rows, latencies = run_queries(retriever, queries, card_ids)
+            rows, latencies = run_queries(retriever, queries, target_ids, groups, flow_ids)
         except Exception as e:  # keep going so one broken model does not hide the others
             print(f"[{name}] FAILED: {e}", flush=True)
             report["models"][name] = {"error": f"{type(e).__name__}: {e}"}

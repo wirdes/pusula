@@ -1,4 +1,4 @@
-"""Load and validate Pusula info cards and evaluation queries."""
+"""Load and validate Pusula info cards, decision flows and evaluation queries."""
 
 from __future__ import annotations
 
@@ -10,6 +10,7 @@ import yaml
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 CARDS_DIR = REPO_ROOT / "cards"
+FLOWS_DIR = REPO_ROOT / "flows"
 QUERIES_PATH = REPO_ROOT / "eval" / "queries.jsonl"
 
 CATEGORIES = {"deprem", "ilk-yardim", "tehlike", "hayatta-kalma", "iletisim", "hazirlik", "psikolojik"}
@@ -39,16 +40,24 @@ def tokenize(text: str, prefix_len: int | None = None) -> list[str]:
     return tokens
 
 
-def load_cards(cards_dir: Path = CARDS_DIR) -> list[dict]:
-    cards = []
-    for path in sorted(cards_dir.glob("*.yaml")):
+def _load_yaml_dir(directory: Path) -> list[dict]:
+    items = []
+    for path in sorted(directory.glob("*.yaml")):
         with path.open(encoding="utf-8") as f:
-            card = yaml.safe_load(f)
-        if not isinstance(card, dict):
+            item = yaml.safe_load(f)
+        if not isinstance(item, dict):
             raise ValueError(f"{path.name}: top level must be a mapping")
-        card["_path"] = path
-        cards.append(card)
-    return cards
+        item["_path"] = path
+        items.append(item)
+    return items
+
+
+def load_cards(cards_dir: Path = CARDS_DIR) -> list[dict]:
+    return _load_yaml_dir(cards_dir)
+
+
+def load_flows(flows_dir: Path = FLOWS_DIR) -> list[dict]:
+    return _load_yaml_dir(flows_dir) if flows_dir.exists() else []
 
 
 def validate_cards(cards: list[dict]) -> list[str]:
@@ -102,6 +111,114 @@ def validate_cards(cards: list[dict]) -> list[str]:
             errors.append(f"{name}: approved cards need review.reviewer and review.date")
 
     return errors
+
+
+def flow_cards(flow: dict) -> set[str]:
+    """Every card a flow can end on."""
+    return {
+        answer["card"]
+        for node in (flow.get("nodes") or {}).values()
+        if isinstance(node, dict)
+        for answer in node.get("answers") or []
+        if isinstance(answer, dict) and answer.get("card")
+    }
+
+
+def validate_flows(flows: list[dict], card_ids: set[str]) -> list[str]:
+    errors = []
+    ids = [f.get("id") for f in flows]
+    owner: dict[str, str] = {}
+
+    for flow in flows:
+        name = flow["_path"].name
+        flow_id = flow.get("id")
+        for field in ("id", "title", "category", "priority", "summary", "start", "nodes", "sources", "review"):
+            if flow.get(field) in (None, "", [], {}):
+                errors.append(f"{name}: missing required field '{field}'")
+        if flow_id is not None:
+            if not ID_RE.match(str(flow_id)):
+                errors.append(f"{name}: id '{flow_id}' must be lowercase words joined by '-'")
+            if flow["_path"].stem != flow_id:
+                errors.append(f"{name}: file name must match id '{flow_id}'")
+            if ids.count(flow_id) > 1:
+                errors.append(f"{name}: duplicate flow id '{flow_id}'")
+            if flow_id in card_ids:
+                errors.append(f"{name}: flow id '{flow_id}' clashes with a card id")
+        if flow.get("category") not in CATEGORIES:
+            errors.append(f"{name}: unknown category '{flow.get('category')}'")
+        if flow.get("priority") not in PRIORITIES:
+            errors.append(f"{name}: unknown priority '{flow.get('priority')}'")
+        review = flow.get("review")
+        if not isinstance(review, dict) or review.get("status") not in REVIEW_STATUSES:
+            errors.append(f"{name}: review.status must be one of {sorted(REVIEW_STATUSES)}")
+
+        nodes = flow.get("nodes")
+        if not isinstance(nodes, dict):
+            continue
+        if flow.get("start") not in nodes:
+            errors.append(f"{name}: start node '{flow.get('start')}' does not exist")
+            continue
+
+        for node_id, node in nodes.items():
+            where = f"{name}: node '{node_id}'"
+            if not isinstance(node, dict) or not isinstance(node.get("question"), str):
+                errors.append(f"{where} needs a 'question'")
+                continue
+            answers = node.get("answers")
+            if not isinstance(answers, list) or len(answers) < 2:
+                errors.append(f"{where} needs at least two answers")
+                continue
+            for answer in answers:
+                if not isinstance(answer, dict) or not isinstance(answer.get("label"), str):
+                    errors.append(f"{where}: every answer needs a 'label'")
+                    continue
+                targets = [k for k in ("card", "next", "message") if answer.get(k)]
+                if len(targets) != 1:
+                    errors.append(f"{where}: answer '{answer['label']}' needs exactly one of card / next / message")
+                elif targets[0] == "card" and answer["card"] not in card_ids:
+                    errors.append(f"{where}: card '{answer['card']}' does not exist")
+                elif targets[0] == "next" and answer["next"] not in nodes:
+                    errors.append(f"{where}: next node '{answer['next']}' does not exist")
+
+        # Every node must be reachable from the start, and following answers must always end.
+        reached, on_path = set(), set()
+
+        def walk(node_id: str) -> None:
+            if node_id in on_path:
+                errors.append(f"{name}: node '{node_id}' is part of a loop")
+                return
+            if node_id in reached or not isinstance(nodes.get(node_id), dict):
+                return
+            reached.add(node_id)
+            on_path.add(node_id)
+            for answer in nodes[node_id].get("answers") or []:
+                if isinstance(answer, dict) and answer.get("next") in nodes:
+                    walk(answer["next"])
+            on_path.discard(node_id)
+
+        walk(flow["start"])
+        for node_id in sorted(set(nodes) - reached):
+            errors.append(f"{name}: node '{node_id}' is never reached from the start")
+
+        for card_id in flow_cards(flow):
+            if card_id in owner and owner[card_id] != flow_id:
+                errors.append(f"{name}: card '{card_id}' already belongs to flow '{owner[card_id]}'")
+            owner[card_id] = flow_id
+    return errors
+
+
+def flow_groups(flows: list[dict]) -> dict[str, str]:
+    """Map each flow id, and each card a flow leads to, onto that flow's id."""
+    groups = {}
+    for flow in flows:
+        groups[flow["id"]] = flow["id"]
+        for card_id in flow_cards(flow):
+            groups[card_id] = flow["id"]
+    return groups
+
+
+def flow_text(flow: dict) -> str:
+    return "\n".join([flow["title"], " ".join(str(flow["summary"]).split())])
 
 
 def load_queries(path: Path = QUERIES_PATH) -> list[dict]:
