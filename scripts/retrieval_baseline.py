@@ -228,7 +228,11 @@ def main() -> int:
     parser.add_argument("--offline", action="store_true", help="use only models already in the local cache")
     parser.add_argument("--out", default="baseline", help="output file name (without extension) under results/")
     parser.add_argument("--no-flows", action="store_true", help="search cards only, ignoring decision flows")
+    parser.add_argument("--student", help="also measure a model trained by train_student.py, saved at this path")
     args = parser.parse_args()
+
+    if args.student:
+        EMBEDDING_MODELS["pusula-student"] = {"id": args.student, "query_prefix": "query: ", "doc_prefix": "passage: "}
 
     if args.offline:
         os.environ["HF_HUB_OFFLINE"] = "1"

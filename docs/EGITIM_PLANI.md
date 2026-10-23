@@ -111,7 +111,18 @@ Ayrıntılar: [`data/stats.md`](../data/stats.md). En zayıf kart, 85 örnekle p
 | `rejected.jsonl` | Öğretmenin ayırdığı mesajlar ve nedeni |
 | `stats.md` | Atılanlar, varyantlar, tarzlar ve kart başına örnek sayısı |
 
-### 3. Öğrenci eğitimi (sıradaki adım)
+### 3. Öğrenci eğitimi ([`scripts/train_student.py`](../scripts/train_student.py))
+
+**İlk sonuç (v0):** multilingual-e5-small, RX 9070 XT'de 3 turda (74 saniye) eğitildi. Test setinde, akışlarla ölçüldüğünde:
+- İlk sıradan isabet %65 → **%77**, ilk üçte %81 → **%88**.
+- Türkçe karaktersiz (%81) ve panik (%70) sorularda öğretmeni geçti.
+- Yazım hataları, terimler ve kapsam dışı ayrımında geride; öğretmenin %81 / %95 seviyesine henüz ulaşmadı.
+
+Ayrıntılar ve v1 için yapılacaklar: [`results/README.md`](../results/README.md).
+
+Uygulanan yöntem, aşağıdaki "ana kayıp"ın küçük kart setine uyarlanmış hali. Her adımda mesajlar 38 kartın **hepsiyle** karşılaştırılıyor ve tüm kartlar üzerinde softmax alınıyor. Böylece:
+- Her diğer kart, zıt talimatlı kardeş kartlar da dahil, negatif örnek oluyor.
+- Paket içi negatif yönteminde iki mesaj aynı karta aitse kartın kendi mesajının negatifi sayılması gibi bir hata oluşmuyor.
 
 **Aday modeller:**
 

@@ -110,7 +110,12 @@ def main() -> int:
     parser.add_argument("question", nargs="*", help="question to ask; omit for interactive mode")
     parser.add_argument("--model", default=DEFAULT_MODEL, choices=[*LEXICAL_MODELS, *EMBEDDING_MODELS])
     parser.add_argument("--online", action="store_true", help="allow downloading a model that is not cached yet")
+    parser.add_argument("--student", help="use a model trained by train_student.py, saved at this path")
     args = parser.parse_args()
+
+    if args.student:
+        EMBEDDING_MODELS["pusula-student"] = {"id": args.student, "query_prefix": "query: ", "doc_prefix": "passage: "}
+        args.model = "pusula-student"
 
     if not args.online:
         os.environ["HF_HUB_OFFLINE"] = "1"

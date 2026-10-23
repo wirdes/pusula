@@ -95,6 +95,48 @@ python scripts/retrieval_baseline.py
 
 Sonuçlar [`results/baseline.md`](../results/baseline.md) dosyasına yazılır, yorumları [`results/README.md`](../results/README.md) içindedir. Kart ya da soru eklediğinizde bu iki komutu yeniden çalıştırın.
 
+### 6. Pusula'nın kendi modelini eğitmek
+
+Eğitim GPU ister. AMD RX 9070 XT (gfx1201) için AMD'nin ROCm'lu PyTorch sürümüyle ayrı bir ortam kurun:
+
+```bash
+py -3.11 -m venv C:/Users/<kullanici>/.venvs/pusula-rocm
+```
+
+```bash
+C:/Users/<kullanici>/.venvs/pusula-rocm/Scripts/python -m pip install --index-url https://repo.amd.com/rocm/whl-multi-arch/ "torch[device-gfx1201]==2.12.0+rocm7.14.1"
+```
+
+```bash
+C:/Users/<kullanici>/.venvs/pusula-rocm/Scripts/python -m pip install -r requirements.txt
+```
+
+NVIDIA kartta PyTorch'un CUDA sürümü yeterli. GPU yoksa eğitim CPU'da da çalışır ama çok daha yavaştır.
+
+Önce veri setini kurun, sonra eğitin (RX 9070 XT'de yaklaşık 75 saniye):
+
+```bash
+python scripts/build_dataset.py
+```
+
+```bash
+C:/Users/<kullanici>/.venvs/pusula-rocm/Scripts/python scripts/train_student.py
+```
+
+Model, OneDrive gibi senkronize klasörlere girmesin diye repo dışına kaydedilir: `~/.cache/pusula/models/pusula-e5-small-v0`. Eğitilen modeli test setinde ölçmek ve denemek için:
+
+```bash
+python scripts/retrieval_baseline.py --offline --student C:/Users/<kullanici>/.cache/pusula/models/pusula-e5-small-v0 --models modernbert-tr-embed,pusula-student --out student
+```
+
+```bash
+python scripts/ask.py --student C:/Users/<kullanici>/.cache/pusula/models/pusula-e5-small-v0
+```
+
+Öğrenci model için "bilgim yok" ve "emin değilim" eşikleri henüz ayarlanmadı; `ask.py` bu modelle her zaman en iyi kartı gösterir.
+
+**ROCm notu:** PyTorch 2.12 + ROCm 7.14 (Windows, gfx1201) sürümünde SDPA dikkat hesaplaması `hipErrorInvalidValue` hatası veriyor. `train_student.py` bu yüzden varsayılan olarak `--attn eager` kullanır. Ayrıca AMD'nin RX 9070 serisi için önerdiği `TORCH_BLAS_PREFER_HIPBLASLT=0` ayarını kendisi yapar.
+
 ### macOS ve Linux
 
 Adımlar aynıdır; yalnızca sanal ortam komutları farklıdır:

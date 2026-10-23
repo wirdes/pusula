@@ -1,0 +1,63 @@
+{
+  "base": "intfloat/multilingual-e5-small",
+  "device": "AMD Radeon RX 9070 XT",
+  "torch": "2.12.0+rocm7.14.1",
+  "seconds": 74.3,
+  "args": {
+    "base": "intfloat/multilingual-e5-small",
+    "query_prefix": "query: ",
+    "doc_prefix": "passage: ",
+    "train": "C:\\Users\\wirde\\OneDrive\\Desktop\\tts\\pusula\\data\\train.jsonl",
+    "dev": "C:\\Users\\wirde\\OneDrive\\Desktop\\tts\\pusula\\data\\dev.jsonl",
+    "out": "C:\\Users\\wirde\\.cache\\pusula\\models\\pusula-e5-small-v0",
+    "epochs": "3",
+    "batch_size": "64",
+    "lr": "3e-05",
+    "weight_decay": "0.01",
+    "warmup": "0.1",
+    "scale": "20.0",
+    "query_max_len": "64",
+    "doc_max_len": "256",
+    "seed": "13",
+    "max_steps": "None",
+    "cpu": "False",
+    "attn": "eager",
+    "online": "False"
+  },
+  "n_train": 5530,
+  "n_dev": 630,
+  "history": [
+    {
+      "epoch": 0,
+      "step": 0,
+      "card_hit@1": 0.49523809523809526,
+      "hit@1": 0.5428571428571428,
+      "hit@3": 0.7603174603174603,
+      "mrr": 0.6734726484373188
+    },
+    {
+      "epoch": 1,
+      "step": 87,
+      "card_hit@1": 0.8269841269841269,
+      "hit@1": 0.8428571428571429,
+      "hit@3": 0.9507936507936507,
+      "mrr": 0.9022179612585773
+    },
+    {
+      "epoch": 2,
+      "step": 174,
+      "card_hit@1": 0.8777777777777778,
+      "hit@1": 0.8857142857142857,
+      "hit@3": 0.9698412698412698,
+      "mrr": 0.9298809523809525
+    },
+    {
+      "epoch": 3,
+      "step": 261,
+      "card_hit@1": 0.8841269841269841,
+      "hit@1": 0.8904761904761904,
+      "hit@3": 0.9682539682539683,
+      "mrr": 0.933733365400032
+    }
+  ]
+}

@@ -8,6 +8,42 @@
 
 Ayrıntılı, soru bazında sonuçlar (`*.json`) betik her çalıştığında yeniden üretilir ve repoya eklenmez. `baseline.md` her zaman en son ölçümü gösterir; aşağıdaki bölümler ölçümlerin geçmişini özetler.
 
+## Dördüncü ölçüm: Pusula'nın ilk kendi modeli, öğrenci v0 (2026-10-23)
+
+multilingual-e5-small (MIT, 118M), 5.530 sentetik örnekle RX 9070 XT üzerinde 3 tur eğitildi ([`scripts/train_student.py`](../scripts/train_student.py)); eğitim 74 saniye sürdü. Her adımda mesajlar 38 kartın hepsiyle karşılaştırıldı (tüm kartlar üzerinde softmax). Ayrıntılı sonuçlar: [`student_v0.md`](student_v0.md), akışsız hali [`student_v0_cards_only.md`](student_v0_cards_only.md), eğitim günlüğü [`student_v0_training_log.json`](student_v0_training_log.json).
+
+| Model (akışlarla) | Boyut | hit@1 | hit@3 | MRR | Kapsam dışı AUROC |
+|---|---|---|---|---|---|
+| multilingual-e5-small (başlangıç) | 118M | %65 | %81 | %73 | 0,77 |
+| **Pusula öğrencisi v0** | 118M | **%77** | **%88** | **%84** | 0,77 |
+| ModernBERT-TR-Embed (öğretmen) | 149M | %81 | %95 | %88 | 0,93 |
+| bge-m3 | 568M | %74 | %93 | %83 | 0,89 |
+
+Geliştirme setinde (sentetik, eğitimle aynı dağılım) hit@1 %54'ten %89'a çıktı. Test setinde artış 12 puanla sınırlı kaldı. Aradaki fark, eğitim mesajlarını gpt-oss'un, test sorularını ise Claude'un yazmasından kaynaklanan bir stil farkına işaret ediyor.
+
+**Soru tipine göre hit@1 (akışlarla):**
+
+| Model | resmi | günlük | diakritiksiz | yazım hatası | panik | dolaylı | ses |
+|---|---|---|---|---|---|---|---|
+| e5-small | 92 | 63 | 59 | 72 | 50 | 44 | 70 |
+| ModernBERT-TR-Embed | 97 | 84 | 76 | 83 | 60 | 69 | 80 |
+| **Öğrenci v0** | 95 | 76 | **81** | 67 | **70** | 64 | 80 |
+
+- **Öğrenci hedeflenen yerlerde öğretmeni geçti:** Türkçe karaktersiz (%81'e karşı %76) ve panik halindeki kısa sorularda (%70'e karşı %60). Akışsız ölçümde zıt talimatlı kartı ilk sıraya koyma hatası 5, öğretmende 9.
+- **Zayıf kaldığı yerler:**
+  - **Yazım hataları** (%67): Test setindeki hatalar hızlı Türkçe yazımdaki ünlü düşürmeye benziyor ("nasl", "verilr", "belirtilri"); eğitim verisindeki gürültü ise rastgele harf silme ve yer değiştirme.
+  - **Terimler:** "CPR", "Heimlich", "SOS", "anafilaksi" gibi terimler sentetik veride az, çünkü üretim istemi gündelik dili teşvik ediyor. Örneğin "heimlich manevrasi nasil yapilir" karbonmonoksit kartına gitti.
+  - **Kapsam dışı soruları ayırma** (AUROC 0,77): Öğrenci kapsam dışı sorularla hiç eğitilmedi.
+
+**v1 için yapılacaklar:**
+1. Ünlü düşürme ve ı/i karışıklığı gibi gerçekçi Türkçe yazım hatası gürültüsü.
+2. Konuyu terimiyle doğrudan soran yeni bir üretim tarzı ("terim").
+3. Öğretmenden damıtma: öğretmenin kartlara verdiği skorlar (`teacher_top`) ek bir kayıpla öğrenciye aktarılır.
+4. Kapsam dışı soruların en yüksek benzerliğini aşağı çeken bir kayıp, ardından eşiklerin yeniden ayarlanması.
+5. Karşılaştırma için öğretmenin kendisinin (ModernBERT-TR-Embed) aynı veriyle ince ayarı.
+
+**Teknik not:** PyTorch 2.12 + ROCm 7.14 (Windows, gfx1201) sürümünde SDPA dikkat hesaplaması `hipErrorInvalidValue` hatası veriyor. Eğitim betiği bu yüzden varsayılan olarak "eager" dikkat kullanıyor.
+
 ## Üçüncü ölçüm: karar akışları (2026-10-23)
 
 Zıt talimatlı kartlar üç [karar akışına](../flows/README.md) bağlandı: nefes alıyor / almıyor, sıcak / soğuk, enkazda kendim / başkası. Arama bu kartlardan birini bulduğunda uygulama kartı göstermek yerine akışın sorusunu soruyor. Ölçümde bulunan hedef, beklenen karta götüren akışsa isabet sayıldı. 38 kart, 3 akış, 214 soru; internet kapalıyken ölçüldü.

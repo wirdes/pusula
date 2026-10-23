@@ -29,7 +29,9 @@ Deprem gibi afetlerde internet ve mobil şebeke çoğu zaman çöker. Pusula, te
 - [ ] Uygulama özelliklerine yönlendiren niyetler (toplanma alanı, konum paylaşma, acil numaralar, fener, düdük)
 - [ ] Resmi kaynaktan doğrulanmış acil numaralar ve toplanma alanı verisi
 - [x] Sentetik eğitim verisi: gpt-oss-120b ile üretildi, Qwen3-235B ile yargılandı; 5.530 eğitim, 630 geliştirme örneği ([istatistikler](data/stats.md))
-- [ ] Pusula'nın kendi küçük Türkçe modelinin eğitimi ([eğitim planı](docs/EGITIM_PLANI.md))
+- [x] Pusula'nın kendi modeli, ilk sürüm (v0): e5-small'dan eğitildi, test setinde ilk sıradan isabet %65 → %77 ([sonuçlar](results/README.md))
+- [ ] Model v1: gerçekçi yazım hataları, terimler, öğretmenden damıtma, kapsam dışı ayrımı ([eğitim planı](docs/EGITIM_PLANI.md))
+- [ ] Telefona hazırlama: kelime tablosu budama, 8 bit, Core ML
 - [ ] Eksik kart: göğüs ağrısı ve kalp krizi belirtileri
 - [ ] iOS uygulaması: **PusulaApp** (Swift, ayrı repoda)
 
