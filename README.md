@@ -37,10 +37,13 @@ Deprem gibi afetlerde internet ve mobil şebeke çoğu zaman çöker. Pusula, te
 |---|---|
 | [`cards/`](cards/) | Bilgi kartları (YAML) ve kart formatının açıklaması |
 | [`eval/`](eval/) | Türkçe test soruları ve soru tipleri |
-| [`scripts/`](scripts/) | Doğrulama ve arama ölçüm betikleri |
+| [`scripts/`](scripts/) | Doğrulama, deneme (`ask.py`) ve arama ölçüm betikleri |
+| [`docs/`](docs/) | Çalıştırma ve test rehberi |
 | [`results/`](results/) | Ölçüm sonuçları |
 
 ## Geliştirme
+
+Bilgisayarda ve telefonda çalıştırma, kendi sorunu deneme ve sorun giderme için ayrıntılı rehber: **[docs/CALISTIRMA.md](docs/CALISTIRMA.md)**
 
 Model dosyaları büyük olduğu için sanal ortamı ve model önbelleğini OneDrive dışında tutun. Modeller ilk çalıştırmada Hugging Face önbelleğine (`~/.cache/huggingface`) iner.
 
@@ -54,6 +57,12 @@ Kartları ve soruları doğrulamak için:
 
 ```bash
 python scripts/validate.py
+```
+
+Kendi sorunu yazıp hangi kartın bulunduğunu görmek için:
+
+```bash
+python scripts/ask.py
 ```
 
 Hazır modellerle çevrimdışı arama ölçümü için:
